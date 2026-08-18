@@ -30,6 +30,9 @@ export const metadata: Metadata = {
       "Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay.",
     images: ["/images/property-exterior.webp"],
   },
+  icons: {
+    icon: "/images/centrebreak-logo.webp",
+  },
   robots: {
     index: true,
     follow: true,

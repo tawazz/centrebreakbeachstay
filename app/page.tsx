@@ -22,7 +22,7 @@ export default function HomePage() {
       <StructuredData page="home" />
       <main>
         <section className="hero" aria-labelledby="hero-title">
-          <img className="hero-image" src="/images/activities.webp" alt="White sand and turquoise water near Jurien Bay and Green Head" />
+          <img className="hero-image" src="/images/activities.webp" alt="White sand and turquoise water near Jurien Bay and Green Head" fetchPriority="high" />
           <div className="hero-overlay" />
           <div className="shell hero-content">
             <p className="eyebrow eyebrow-light"><Icon name="wave" size={16} /> Jurien Bay area · Green Head</p>
@@ -142,10 +142,25 @@ export default function HomePage() {
               </div>
               <a className="button button-dark" href={business.directionsUrl} target="_blank" rel="noreferrer">Get directions <Icon name="arrow" size={17} /></a>
             </div>
-            <div className="map-card">
-              <iframe title="Map showing Centre Break Beach Stay in Green Head" src={business.mapUrl} loading="lazy" />
+            <a
+              className="map-card"
+              href={business.directionsUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Centre Break Beach Stay in Google Maps"
+            >
+              <span className="map-preview" aria-hidden="true">
+                <span className="map-water" />
+                <span className="map-road map-road-coastal" />
+                <span className="map-road map-road-main" />
+                <span className="map-road map-road-local" />
+                <span className="map-place map-place-green-head">Green Head</span>
+                <span className="map-place map-place-bay">Dynamite Bay</span>
+                <span className="map-marker"><Icon name="pin" size={32} /></span>
+              </span>
+              <span className="map-preview-link">Open in Google Maps <Icon name="arrow" size={16} /></span>
               <div className="map-badge"><Icon name="pin" size={16} /><span>50 metres<br /><small>from Dynamite Bay</small></span></div>
-            </div>
+            </a>
           </div>
         </section>
 

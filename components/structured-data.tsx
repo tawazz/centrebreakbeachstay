@@ -56,7 +56,7 @@ export function StructuredData({ page }: StructuredDataProps) {
       "@type": "PostalAddress",
       ...business.address,
     },
-    menu: menuUrl,
+    menu: absoluteUrl(menuUrl),
     servesCuisine: ["Seafood"],
     openingHoursSpecification: restaurantHours.map((hours) => ({
       "@type": "OpeningHoursSpecification",

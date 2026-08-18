@@ -34,7 +34,7 @@ export default function ActivitiesPage() {
       <SiteHeader />
       <main>
         <section className="page-hero activity-page-hero" aria-labelledby="page-title">
-          <img src="/images/activities.webp" alt="White sand and turquoise water near Jurien Bay and Green Head" />
+          <img src="/images/activities.webp" alt="White sand and turquoise water near Jurien Bay and Green Head" fetchPriority="high" />
           <div className="hero-overlay" />
           <div className="shell page-hero-content">
             <p className="eyebrow eyebrow-light"><Icon name="compass" size={16} /> Jurien Bay & Green Head</p>

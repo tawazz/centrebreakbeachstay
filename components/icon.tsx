@@ -9,6 +9,9 @@ type IconName =
   | "coffee"
   | "compass"
   | "fork"
+  | "facebook"
+  | "email"
+  | "instagram"
   | "menu"
   | "pin"
   | "spark"
@@ -48,6 +51,12 @@ export function Icon({ name, size = 20, ...props }: SVGProps<SVGSVGElement> & { 
       return <svg {...common}><circle cx="12" cy="12" r="9" /><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z" /></svg>;
     case "fork":
       return <svg {...common}><path d="M7 3v5a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V3M9 10v11M17 3v18M17 3a3 3 0 0 1 0 6" /></svg>;
+    case "facebook":
+      return <svg {...common}><path d="M13.5 22v-8h2.8l.5-3h-3.3V9.1c0-.9.3-1.5 1.5-1.5h1.9V4.7c-.3 0-1.4-.2-2.6-.2-2.6 0-4.3 1.6-4.3 4.4V11H7.2v3H10v8" /></svg>;
+    case "email":
+      return <svg {...common}><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></svg>;
+    case "instagram":
+      return <svg {...common}><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" /></svg>;
     case "menu":
       return <svg {...common}><path d="M4 7h16M4 12h16M4 17h16" /></svg>;
     case "pin":

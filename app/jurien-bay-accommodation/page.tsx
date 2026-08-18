@@ -37,7 +37,7 @@ export default function JurienBayAccommodationPage() {
       <StructuredData page="accommodation" />
       <main>
         <section className="page-hero jurien-page-hero" aria-labelledby="page-title">
-          <img src="/images/property-exterior.webp" alt="Centre Break Beach Stay accommodation near Jurien Bay in Green Head" />
+          <img src="/images/property-exterior.webp" alt="Centre Break Beach Stay accommodation near Jurien Bay in Green Head" fetchPriority="high" />
           <div className="hero-overlay" />
           <div className="shell page-hero-content">
             <p className="eyebrow eyebrow-light"><Icon name="pin" size={16} /> Jurien Bay accommodation · Green Head</p>

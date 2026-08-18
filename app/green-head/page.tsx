@@ -49,6 +49,7 @@ export default function GreenHeadPage() {
           <img
             src="/images/activities.webp"
             alt="Sheltered turquoise water and white sand at Dynamite Bay near Green Head"
+            fetchPriority="high"
           />
           <div className="hero-overlay" />
           <div className="shell page-hero-content">

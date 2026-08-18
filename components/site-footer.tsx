@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { bookingUrl, business, menuUrl, restaurantHours, termsUrl } from "../lib/content";
+import { Icon } from "./icon";
 
 export function SiteFooter() {
   return (
@@ -24,10 +25,22 @@ export function SiteFooter() {
         <div className="footer-column">
           <p className="footer-label">Contact</p>
           <a href={`tel:${business.telephone}`}>{business.displayPhone}</a>
-          <a href={`mailto:${business.email}`}>Email us</a>
+          <a className="footer-icon-link" href={`mailto:${business.email}`}>
+            <Icon name="email" size={18} />
+            <span>Email us</span>
+          </a>
           <p>{business.address.streetAddress}<br />{business.address.addressLocality} {business.address.addressRegion} {business.address.postalCode}</p>
-          <a href="https://www.instagram.com/centrebreakbeachstay/" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://www.facebook.com/centrebreak" target="_blank" rel="noreferrer">Facebook</a>
+          <p className="footer-label footer-follow-label">Follow along</p>
+          <div className="footer-social-links">
+            <a className="footer-icon-link" href="https://www.instagram.com/centrebreakbeachstay/" target="_blank" rel="noreferrer">
+              <Icon name="instagram" size={18} />
+              <span>Instagram</span>
+            </a>
+            <a className="footer-icon-link" href="https://www.facebook.com/centrebreak" target="_blank" rel="noreferrer">
+              <Icon name="facebook" size={18} />
+              <span>Facebook</span>
+            </a>
+          </div>
         </div>
 
         <div className="footer-column footer-hours">

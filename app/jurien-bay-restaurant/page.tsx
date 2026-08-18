@@ -36,7 +36,7 @@ export default function JurienBayRestaurantPage() {
       <StructuredData page="restaurant" />
       <main>
         <section className="page-hero restaurant-page-hero" aria-labelledby="page-title">
-          <img src="/images/crayfish.webp" alt="Local seafood at Centre Break Restaurant near Jurien Bay" />
+          <img src="/images/crayfish.webp" alt="Local seafood at Centre Break Restaurant near Jurien Bay" fetchPriority="high" />
           <div className="hero-overlay" />
           <div className="shell page-hero-content">
             <p className="eyebrow eyebrow-light"><Icon name="fork" size={16} /> Restaurant near Jurien Bay · Green Head</p>
