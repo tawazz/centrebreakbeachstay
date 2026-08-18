@@ -4,23 +4,33 @@ import { Icon } from "../components/icon";
 import { RoomCard } from "../components/room-card";
 import { SiteFooter } from "../components/site-footer";
 import { SiteHeader } from "../components/site-header";
-import { activities, bookingUrl, menuUrl, quickActivities, rooms } from "../lib/content";
+import { StructuredData } from "../components/structured-data";
+import {
+  activities,
+  bookingUrl,
+  business,
+  menuUrl,
+  quickActivities,
+  restaurantHours,
+  rooms,
+} from "../lib/content";
 
 export default function HomePage() {
   return (
     <>
       <SiteHeader />
+      <StructuredData page="home" />
       <main>
         <section className="hero" aria-labelledby="hero-title">
-          <img className="hero-image" src="/images/activities.webp" alt="White sand and turquoise water near Centre Break Beach Stay" />
+          <img className="hero-image" src="/images/activities.webp" alt="White sand and turquoise water near Jurien Bay and Green Head" />
           <div className="hero-overlay" />
           <div className="shell hero-content">
-            <p className="eyebrow eyebrow-light"><Icon name="wave" size={16} /> Green Head · Western Australia</p>
-            <h1 id="hero-title">A little more<br /><em>time by the sea.</em></h1>
-            <p className="hero-copy">A relaxed coastal base beside Dynamite Bay, made for slow mornings, salty afternoons, and weekends that feel longer than they are.</p>
+            <p className="eyebrow eyebrow-light"><Icon name="wave" size={16} /> Jurien Bay area · Green Head</p>
+            <h1 id="hero-title">Jurien Bay accommodation<br /><em>by the sea.</em></h1>
+            <p className="hero-copy">Looking for a quieter place to stay near Jurien Bay? Centre Break Beach Stay is in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay.</p>
             <div className="hero-actions">
               <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer">Book your stay <Icon name="arrow" size={17} /></a>
-              <a className="button button-ghost" href="#roomsrates">Explore rooms</a>
+              <Link className="button button-ghost" href="/jurien-bay-accommodation/">Explore rooms</Link>
             </div>
           </div>
           <div className="hero-note"><span>50m</span><small>to Dynamite Bay</small></div>
@@ -28,11 +38,11 @@ export default function HomePage() {
 
         <section className="intro-section shell section-pad" aria-labelledby="intro-title">
           <div className="intro-copy">
-            <p className="eyebrow">Welcome to Centre Break</p>
+            <p className="eyebrow">Stay near Jurien Bay</p>
             <h2 id="intro-title">A simple place to <em>disappear.</em></h2>
-            <p className="lead">Centre Break Beach Stay sits just fifty metres from the aptly named Dynamite Bay — close enough to hear the ocean, far enough to feel away from it all.</p>
-            <p>Choose from self-contained apartments, ensuite queen or twin rooms, and family-friendly spaces. There is a licensed café on site for hearty breakfasts, tasty lunches, and dinner when you would rather stay close to the water.</p>
-            <Link className="text-link" href="#location">See where we are <Icon name="arrow" size={16} /></Link>
+            <p className="lead">Centre Break Beach Stay is in Green Head, around {business.distanceToJurienBay} from Jurien Bay and just {business.distanceToDynamiteBay} from Dynamite Bay.</p>
+            <p>Choose from self-contained apartments, ensuite queen or twin rooms, and family-friendly spaces. Centre Break Restaurant is onsite for licensed lunch and dinner when you would rather stay close to the water.</p>
+            <Link className="text-link" href="/jurien-bay-accommodation/">See Jurien Bay accommodation <Icon name="arrow" size={16} /></Link>
           </div>
           <div className="intro-image-wrap">
             <img src="/images/welcome.webp" alt="Welcome garden entrance at Centre Break Beach Stay" />
@@ -46,7 +56,7 @@ export default function HomePage() {
               <p className="eyebrow">The stay</p>
               <h2>Come as you are.</h2>
             </div>
-            <p className="section-side-copy">Rooms to suit a quick coastal escape, an easy family holiday, or a few extra days of doing absolutely nothing.</p>
+            <p className="section-side-copy">Rooms to suit a quick Jurien Bay coastal escape, an easy family holiday, or a few extra days of doing absolutely nothing.</p>
           </div>
           <Gallery />
         </section>
@@ -55,7 +65,7 @@ export default function HomePage() {
           <div className="shell section-pad">
             <div className="section-heading section-heading-row rooms-heading">
               <div>
-                <p className="eyebrow">Rooms & rates</p>
+                <p className="eyebrow">Jurien Bay accommodation · rooms & rates</p>
                 <h2 id="rooms-title">Find your kind<br /><em>of comfortable.</em></h2>
               </div>
               <div className="room-heading-aside">
@@ -72,36 +82,38 @@ export default function HomePage() {
         <section className="food-section section-pad" id="menu" aria-labelledby="food-title">
           <div className="shell food-layout">
             <div className="food-image-grid">
-              <img className="food-image-main" src="/images/crayfish.webp" alt="Local crayfish served with salad" />
+              <img className="food-image-main" src="/images/crayfish.webp" alt="Local seafood served at Centre Break Restaurant near Jurien Bay" />
               <img className="food-image-small" src="/images/property-patio.jpg" alt="Outdoor café patio" />
               <span className="food-stamp">Eat<br /><em>local.</em></span>
             </div>
             <div className="food-copy">
-              <p className="eyebrow">Food & drink</p>
-              <h2 id="food-title">Stay for<br /><em>another round.</em></h2>
+              <p className="eyebrow">Restaurant near Jurien Bay</p>
+              <h2 id="food-title">Centre Break<br /><em>Restaurant.</em></h2>
               <p className="lead">Local seafood, easy lunches, hearty dinners, and an ice-cold drink without needing to get back in the car.</p>
-              <p>Our onsite licensed café is open for breakfast, lunch, and dinner. Pull up a chair, let the day stretch out, and enjoy the view from our shaded patio.</p>
+              <p>Centre Break Restaurant is a public, onsite licensed restaurant and café in Green Head, around 15 minutes from Jurien Bay. Pull up a chair and enjoy the view from our shaded patio.</p>
               <div className="hours-card">
-                <div><span className="hours-label">Restaurant</span><strong>11am–2pm</strong></div>
-                <div><span className="hours-label">Dinner</span><strong>5–7pm</strong></div>
+                {restaurantHours.map((hours) => <div key={hours.label}><span className="hours-label">{hours.label}</span><strong>{hours.display}</strong></div>)}
               </div>
-              <a className="text-link" href={menuUrl} target="_blank" rel="noreferrer">View the menu <Icon name="arrow" size={16} /></a>
+              <div className="inline-link-row">
+                <a className="text-link" href={menuUrl} target="_blank" rel="noreferrer">View the menu <Icon name="arrow" size={16} /></a>
+                <Link className="text-link" href="/jurien-bay-restaurant/">Restaurant details <Icon name="arrow" size={16} /></Link>
+              </div>
             </div>
           </div>
         </section>
 
         <section className="activity-section" id="activities" aria-labelledby="activities-title">
           <div className="activity-visual">
-            <img src="/images/activities.webp" alt="Turquoise water and white sand at Green Head" />
-            <div className="activity-visual-copy"><span>Indian Ocean Drive</span><strong>Out here,<br /><em>the day is yours.</em></strong></div>
+            <img src="/images/activities.webp" alt="Turquoise water and white sand near Jurien Bay and Green Head" />
+            <div className="activity-visual-copy"><span>Things to do near Jurien Bay</span><strong>Out here,<br /><em>the day is yours.</em></strong></div>
           </div>
           <div className="shell section-pad activity-content">
             <div className="section-heading section-heading-row">
               <div>
-                <p className="eyebrow">Things to do</p>
+                <p className="eyebrow">Things to do near Jurien Bay</p>
                 <h2 id="activities-title">Go on,<br /><em>get outside.</em></h2>
               </div>
-              <div className="activity-heading-aside"><p>White sandy beaches, sheltered coves, offshore islands, and wildflowers inland. Green Head is a small place with plenty to fill a day.</p><Link className="text-link" href="/activities/">See all activities <Icon name="arrow" size={16} /></Link></div>
+              <div className="activity-heading-aside"><p>Visiting Jurien Bay? Green Head is 15 minutes away, with white sandy beaches, sheltered coves, offshore islands, and wildflowers inland.</p><Link className="text-link" href="/activities/">Things to do near Jurien Bay <Icon name="arrow" size={16} /></Link></div>
             </div>
             <div className="activity-feature-grid">
               {activities.slice(0, 4).map((activity, index) => (
@@ -121,16 +133,16 @@ export default function HomePage() {
           <div className="shell location-layout">
             <div className="location-copy">
               <p className="eyebrow">Find us</p>
-              <h2 id="location-title">Right where<br /><em>you want to be.</em></h2>
+              <h2 id="location-title">A coastal base<br /><em>near Jurien Bay.</em></h2>
               <p className="lead">Green Head is a quaint fishing village two hours north of Perth and 15 minutes from Jurien Bay along Indian Ocean Drive.</p>
               <div className="location-details">
-                <div><Icon name="pin" size={20} /><span><strong>Centre Break Beach Stay</strong>1 Green Head Road<br />Green Head WA 6514</span></div>
-                <div><Icon name="calendar" size={20} /><span><strong>Check-in / check-out</strong>From 2pm · Until 10am</span></div>
+                <div><Icon name="pin" size={20} /><span><strong>{business.name}</strong>{business.address.streetAddress}<br />{business.address.addressLocality} {business.address.addressRegion} {business.address.postalCode}</span></div>
+                <div><Icon name="calendar" size={20} /><span><strong>Check-in / check-out</strong>{business.checkInLabel} · {business.checkOutLabel}</span></div>
               </div>
-              <a className="button button-dark" href="https://www.google.com/maps/dir/?api=1&destination=Centre+Break+Beach+Stay,+1+Green+Head+Road,+Green+Head+WA+6514" target="_blank" rel="noreferrer">Get directions <Icon name="arrow" size={17} /></a>
+              <a className="button button-dark" href={business.directionsUrl} target="_blank" rel="noreferrer">Get directions <Icon name="arrow" size={17} /></a>
             </div>
             <div className="map-card">
-              <iframe title="Map showing Centre Break Beach Stay in Green Head" src="https://www.google.com/maps?q=Centre+Break+Beach+Stay,+1+Green+Head+Road,+Green+Head+WA+6514&output=embed" loading="lazy" />
+              <iframe title="Map showing Centre Break Beach Stay in Green Head" src={business.mapUrl} loading="lazy" />
               <div className="map-badge"><Icon name="pin" size={16} /><span>50 metres<br /><small>from Dynamite Bay</small></span></div>
             </div>
           </div>
@@ -138,7 +150,7 @@ export default function HomePage() {
 
         <section className="booking-section">
           <div className="shell booking-inner">
-            <div><p className="eyebrow eyebrow-light">Ready when you are</p><h2>Make a little<br /><em>space for yourself.</em></h2></div>
+            <div><p className="eyebrow eyebrow-light">Ready when you are</p><h2>Stay near Jurien Bay.<br /><em>Make a little space.</em></h2></div>
             <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer">Book Centre Break <Icon name="arrow" size={17} /></a>
           </div>
         </section>
