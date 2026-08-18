@@ -14,6 +14,7 @@ export function SiteFooter() {
 
         <div className="footer-column">
           <p className="footer-label">Explore</p>
+          <Link href="/green-head/">Green Head guide</Link>
           <Link href="/jurien-bay-accommodation/">Jurien Bay accommodation</Link>
           <Link href="/activities/">Activities</Link>
           <Link href="/jurien-bay-restaurant/">Restaurant near Jurien Bay</Link>

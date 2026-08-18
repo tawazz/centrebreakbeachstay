@@ -6,7 +6,8 @@ import { bookingUrl } from "../lib/content";
 import { Icon } from "./icon";
 
 const links = [
-  { label: "Jurien Bay stays", href: "/jurien-bay-accommodation/" },
+  { label: "Green Head", href: "/green-head/" },
+  { label: "Rooms", href: "/jurien-bay-accommodation/" },
   { label: "Activities", href: "/activities/" },
   { label: "Restaurant", href: "/jurien-bay-restaurant/" },
   { label: "Find us", href: "/#location" },

@@ -187,3 +187,132 @@ export const quickActivities = [
   "Walk trails",
   "Skydive Jurien Bay",
 ];
+
+export const greenHeadLinks = {
+  localGuide: "https://coorow.wa.gov.au/visitors/our-shire/green-head/",
+  destinationGuide: "https://visitturquoisecoast.com.au/destination/green-head",
+  threeBaysWalkway: "https://trailswa.com.au/trails/trail/three-bays-walkway-greenhead",
+  seaLionTours: "https://www.sealioncharters.com.au/tours",
+  lesueurNationalPark: "https://exploreparks.dbca.wa.gov.au/park/lesueur-national-park",
+  caveInformation: "https://coorow.wa.gov.au/visitors/see-and-do/caves/",
+  parkAlerts: "https://alerts.dbca.wa.gov.au/",
+} as const;
+
+export type GreenHeadHighlight = {
+  title: string;
+  description: string;
+  link?: string;
+  linkLabel?: string;
+};
+
+export const greenHeadHighlights: GreenHeadHighlight[] = [
+  {
+    title: "Dynamite Bay",
+    description:
+      "A sheltered, turquoise bay for swimming, snorkelling, beach fishing, picnics and slow afternoons by the water.",
+    link: greenHeadLinks.localGuide,
+    linkLabel: "Plan your beach day",
+  },
+  {
+    title: "Three Bays Walkway",
+    description:
+      "Follow the easy 2.8 km coastal trail between South Bay, Dynamite Bay and Little Anchorage, with lookouts along the way.",
+    link: greenHeadLinks.threeBaysWalkway,
+    linkLabel: "See the trail details",
+  },
+  {
+    title: "Point Louise",
+    description:
+      "A local surf break with clear water and reef for visitors who want to surf, snorkel or watch the coast from the rocks.",
+    link: greenHeadLinks.localGuide,
+    linkLabel: "Explore Green Head",
+  },
+  {
+    title: "Sea lion tours",
+    description:
+      "Join a pre-booked tour from Jurien Bay Boat Harbour to meet Australian sea lions around the offshore islands. Every interaction is on the animals’ terms.",
+    link: greenHeadLinks.seaLionTours,
+    linkLabel: "See tour information",
+  },
+  {
+    title: "Fishing & boating",
+    description:
+      "Try beach fishing, use the South Bay boat ramp or explore the coastline from Anchorage Bay’s jetty and fish-cleaning facilities.",
+    link: greenHeadLinks.destinationGuide,
+    linkLabel: "See local visitor information",
+  },
+  {
+    title: "Wildflowers & Lesueur",
+    description:
+      "Head inland for spring colour and the remarkable plant diversity of Lesueur National Park, one of the region’s great nature escapes.",
+    link: greenHeadLinks.lesueurNationalPark,
+    linkLabel: "Plan a park visit",
+  },
+  {
+    title: "Galleries & local stops",
+    description:
+      "Take a slower turn through Green Head’s galleries, mini golf, café stops and small-town coastal character between beach adventures.",
+    link: greenHeadLinks.destinationGuide,
+    linkLabel: "Explore the destination guide",
+  },
+];
+
+export const greenHeadDayPlan = [
+  {
+    time: "First light",
+    title: "Start with the water",
+    description:
+      "Walk down to Dynamite Bay for a swim, snorkel or quiet coffee before the day gets moving.",
+  },
+  {
+    time: "Morning",
+    title: "Choose your adventure",
+    description:
+      "Follow the Three Bays Walkway, explore Point Louise or join a pre-booked sea lion tour from nearby Jurien Bay.",
+  },
+  {
+    time: "Afternoon",
+    title: "Go inland for colour",
+    description:
+      "Make room for wildflowers, park trails or a gallery stop when you feel like changing the view.",
+  },
+  {
+    time: "Evening",
+    title: "Stay close to dinner",
+    description:
+      "Come back to Green Head, settle in and eat onsite at Centre Break Restaurant without packing up the whole day.",
+  },
+];
+
+export type GreenHeadFaq = {
+  question: string;
+  answer: string;
+};
+
+export const greenHeadFaqs: GreenHeadFaq[] = [
+  {
+    question: "Where is Green Head, WA?",
+    answer:
+      "Green Head is a coastal town on Western Australia’s Turquoise Coast, around 15 minutes from Jurien Bay along Indian Ocean Drive. Centre Break Beach Stay is at 1 Green Head Road.",
+  },
+  {
+    question: "What are the best things to do in Green Head?",
+    answer:
+      "Popular Green Head activities include swimming and snorkelling at Dynamite Bay, walking the 2.8 km Three Bays Walkway, surfing or snorkelling at Point Louise, fishing, visiting galleries and exploring wildflowers and nearby Lesueur National Park.",
+  },
+  {
+    question: "How close is Dynamite Bay to Centre Break Beach Stay?",
+    answer:
+      "Dynamite Bay is approximately 50 metres from Centre Break Beach Stay, making it easy to fit in a swim, snorkel or sunset walk.",
+  },
+  {
+    question: "Where can I eat in Green Head?",
+    answer:
+      "Centre Break Restaurant is a public, licensed restaurant onsite at Centre Break Beach Stay. Current hours are lunch from 11am–2pm and dinner from 5pm–7pm, seven days a week. Hours can change, so check the menu or call ahead.",
+  },
+  {
+    question: "Is Stockyard Gully Cave open?",
+    answer:
+      "The Shire of Coorow currently lists the Stockyard Gully Cave Walk and southern access track as closed until further notice. Check official access updates before travelling.",
+  },
+];

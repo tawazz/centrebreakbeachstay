@@ -1,7 +1,7 @@
-import { business, menuUrl, restaurantHours, siteUrl } from "../lib/content";
+import { business, greenHeadFaqs, menuUrl, restaurantHours, siteUrl } from "../lib/content";
 
 type StructuredDataProps = {
-  page: "home" | "accommodation" | "restaurant";
+  page: "home" | "accommodation" | "restaurant" | "green-head";
 };
 
 const daysOfWeek = [
@@ -68,7 +68,58 @@ export function StructuredData({ page }: StructuredDataProps) {
     sameAs: business.sameAs,
   };
 
-  const graph = page === "restaurant" ? [hotel, restaurant] : [hotel];
+  const destination = {
+    "@type": "TouristDestination",
+    "@id": `${siteUrl}/green-head/#destination`,
+    name: "Green Head",
+    url: `${siteUrl}/green-head/`,
+    description:
+      "Green Head is a relaxed Turquoise Coast destination with sheltered beaches, coastal walks, sea lion tours, fishing, wildflowers and nearby nature escapes.",
+    image: [absoluteUrl("/images/activities.webp"), absoluteUrl("/images/welcome.webp")],
+    touristType: ["Beach lovers", "Families", "Nature lovers", "Road trippers"],
+    containedInPlace: {
+      "@type": "Place",
+      name: "Turquoise Coast",
+    },
+  };
+
+  const breadcrumb = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${siteUrl}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Green Head",
+        item: `${siteUrl}/green-head/`,
+      },
+    ],
+  };
+
+  const faq = {
+    "@type": "FAQPage",
+    "@id": `${siteUrl}/green-head/#faq`,
+    mainEntity: greenHeadFaqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
+  const graph =
+    page === "restaurant"
+      ? [hotel, restaurant]
+      : page === "green-head"
+        ? [hotel, restaurant, destination, breadcrumb, faq]
+        : [hotel];
   const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(
     /</g,
     "\\u003c",
