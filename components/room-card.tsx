@@ -1,6 +1,5 @@
 import { Icon } from "./icon";
 import type { Room } from "../lib/content";
-import { bookingUrl } from "../lib/content";
 
 export function RoomCard({ room, index }: { room: Room; index: number }) {
   return (
@@ -20,7 +19,16 @@ export function RoomCard({ room, index }: { room: Room; index: number }) {
         <div className="feature-list">
           {room.features.map((feature) => <span key={feature}><Icon name="check" size={14} /> {feature}</span>)}
         </div>
-        <a className="text-link" href={bookingUrl} target="_blank" rel="noreferrer">Check availability <Icon name="arrow" size={16} /></a>
+        <a
+          className="button button-dark room-card-cta"
+          href={room.bookingUrl}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`Check dates and rates for ${room.name}`}
+          data-booking-placement={`room-${room.name}`}
+        >
+          Check dates & rates <Icon name="arrow" size={16} />
+        </a>
       </div>
     </article>
   );

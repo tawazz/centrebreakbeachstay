@@ -1,5 +1,6 @@
 export const siteUrl = "https://centrebreakbeachstay.com.au";
-export const bookingUrl = "https://us2.cloudbeds.com/reservation/sqAH3Y";
+const bookingBaseUrl = "https://us2.cloudbeds.com/en/reservation/sqAH3Y";
+export const bookingUrl = `${bookingBaseUrl}?currency=aud`;
 export const menuUrl =
   "https://centrebreakbeachstay.com.au/wp-content/uploads/2025/01/Medu.pdf";
 export const termsUrl =
@@ -47,18 +48,23 @@ export type Room = {
   sleeps: string;
   beds: string;
   features: string[];
+  bookingUrl: string;
 };
+
+const roomBookingUrl = (roomId: string) => `${bookingBaseUrl}?rid=${roomId}&currency=aud`;
 
 export const rooms: Room[] = [
   {
     name: "Budget Double Room",
     eyebrow: "Shared bathroom",
-    image: "/images/room-budget.webp",
+    image:
+      "https://h-img3.us2.cloudbeds.com/uploads/60834516611264/screenshot_2025-02-04_at_5.54.44pm~~67a1e3fe57bd7.jpeg",
     description:
-      "A comfortable queen room with a mini bar, TV, tea and coffee facilities, air conditioning, and everything you need for an easy overnight stay.",
+      "A comfortable queen room with tea and coffee facilities, air conditioning, TV, and shared bathroom access for an easy overnight stay.",
     sleeps: "2 guests",
     beds: "1 queen bed",
-    features: ["A/C", "Wi-Fi", "TV", "Tea & coffee", "Towels"],
+    features: ["A/C", "Wi-Fi", "TV", "Shared bathroom", "Towels"],
+    bookingUrl: roomBookingUrl("62357956051080"),
   },
   {
     name: "Ensuite Double Room",
@@ -69,56 +75,51 @@ export const rooms: Room[] = [
     sleeps: "2 guests",
     beds: "1 queen bed",
     features: ["A/C", "Wi-Fi", "TV", "Shower", "Towels"],
+    bookingUrl: roomBookingUrl("63550677651593"),
   },
   {
-    name: "Twin Room",
-    eyebrow: "Ensuite",
-    image: "/images/room-twin.webp",
-    description:
-      "Two single beds, an ensuite bathroom, air conditioning, ceiling fan, flat-screen TV, tea and coffee, and a minibar make this a flexible choice for friends or family.",
-    sleeps: "2 guests",
-    beds: "2 single beds",
-    features: ["A/C", "Wi-Fi", "TV", "Shower", "Minibar"],
-  },
-  {
-    name: "Self-contained suite",
-    eyebrow: "1 bedroom · views to Dynamite Bay",
+    name: "1-bedroom self-contained suite",
+    eyebrow: "Sleeps 3 · views to Dynamite Bay",
     image: "/images/room-suite.jpg",
     description:
       "A home away from home for a couple or small family, with a queen bed, single bed, ensuite bathroom, kitchenette, TV, and balcony access.",
     sleeps: "3 guests",
     beds: "1 queen + 1 single",
     features: ["Kitchenette", "A/C", "Wi-Fi", "TV", "Balcony"],
+    bookingUrl: roomBookingUrl("63560894251205"),
   },
   {
     name: "Family Room",
-    eyebrow: "Private bathroom nearby",
+    eyebrow: "Private bathroom next door",
     image: "/images/room-family.jpg",
     description:
       "A downstairs family room with a queen bed and bunk bed, coffee-making facilities, TV, and a private bathroom and toilet located next door.",
     sleeps: "4 guests",
     beds: "1 queen + 2 bunks",
     features: ["A/C", "Wi-Fi", "TV", "Shower", "Towels"],
+    bookingUrl: roomBookingUrl("63560385978501"),
   },
   {
     name: "Family ensuite unit",
-    eyebrow: "2 rooms · deck access",
+    eyebrow: "Sleeps 5 · 2 rooms · deck access",
     image: "/images/room-family-ensuite.webp",
     description:
       "Two connected rooms with two queen beds and a single bed, ensuite bathroom, air conditioning, flat-screen TV, tea and coffee, and access to the deck.",
     sleeps: "5 guests",
     beds: "2 queens + 1 single",
     features: ["A/C", "Wi-Fi", "TV", "Shower", "Deck"],
+    bookingUrl: roomBookingUrl("63557503402199"),
   },
   {
-    name: "Self-contained suite",
-    eyebrow: "2 bedrooms · sleeps 6",
+    name: "2-bedroom self-contained suite",
+    eyebrow: "Sleeps 6 · ocean views",
     image: "/images/room-two-bedroom.jpg",
     description:
       "A spacious family setup with a queen room and a bunk room, full kitchenette, air conditioning, ensuite bathroom, balcony access, and ocean views.",
     sleeps: "6 guests",
     beds: "1 queen + 4 singles",
     features: ["Kitchen", "A/C", "Wi-Fi", "TV", "Ocean views"],
+    bookingUrl: roomBookingUrl("63563852673161"),
   },
 ];
 

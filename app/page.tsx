@@ -27,11 +27,12 @@ export default function HomePage() {
           <div className="shell hero-content">
             <p className="eyebrow eyebrow-light"><Icon name="wave" size={16} /> Jurien Bay area · Green Head</p>
             <h1 id="hero-title">Jurien Bay accommodation<br /><em>by the sea.</em></h1>
-            <p className="hero-copy">Looking for a quieter place to stay near Jurien Bay? Centre Break Beach Stay is in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay.</p>
+            <p className="hero-copy">Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay, with comfortable rooms for couples and families.</p>
             <div className="hero-actions">
-              <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer">Book your stay <Icon name="arrow" size={17} /></a>
+              <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="home-hero">Check dates & rates <Icon name="arrow" size={17} /></a>
               <Link className="button button-ghost" href="/jurien-bay-accommodation/">Explore rooms</Link>
             </div>
+            <p className="booking-helper">Live availability opens in our booking partner.</p>
           </div>
           <div className="hero-note"><span>50m</span><small>to Dynamite Bay</small></div>
         </section>
@@ -41,7 +42,7 @@ export default function HomePage() {
             <p className="eyebrow">Stay near Jurien Bay</p>
             <h2 id="intro-title">A simple place to <em>disappear.</em></h2>
             <p className="lead">Centre Break Beach Stay is in Green Head, around {business.distanceToJurienBay} from Jurien Bay and just {business.distanceToDynamiteBay} from Dynamite Bay.</p>
-            <p>Choose from self-contained apartments, ensuite queen or twin rooms, and family-friendly spaces. Centre Break Restaurant is onsite for licensed lunch and dinner when you would rather stay close to the water.</p>
+            <p>Choose from ensuite queen, family, and self-contained rooms. Centre Break Restaurant is onsite for licensed lunch and dinner when you would rather stay close to the water.</p>
             <Link className="text-link" href="/jurien-bay-accommodation/">See Jurien Bay accommodation <Icon name="arrow" size={16} /></Link>
           </div>
           <div className="intro-image-wrap">
@@ -65,12 +66,12 @@ export default function HomePage() {
           <div className="shell section-pad">
             <div className="section-heading section-heading-row rooms-heading">
               <div>
-                <p className="eyebrow">Jurien Bay accommodation · rooms & rates</p>
-                <h2 id="rooms-title">Find your kind<br /><em>of comfortable.</em></h2>
+                <p className="eyebrow">Jurien Bay accommodation · rooms & availability</p>
+                <h2 id="rooms-title">Choose your<br /><em>room.</em></h2>
               </div>
               <div className="room-heading-aside">
-                <p>Every room includes Wi-Fi, air conditioning, TV, and the essentials for a good night’s sleep. Check current rates and availability through our secure booking partner.</p>
-                <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer">Check availability <Icon name="arrow" size={17} /></a>
+                <p>Compare room size, bedding, bathroom access, and amenities here. Choose your dates and guests to see current rates through our booking partner.</p>
+                <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="home-rooms-heading">Check dates & rates <Icon name="arrow" size={17} /></a>
               </div>
             </div>
             <div className="room-grid">
@@ -151,7 +152,7 @@ export default function HomePage() {
         <section className="booking-section">
           <div className="shell booking-inner">
             <div><p className="eyebrow eyebrow-light">Ready when you are</p><h2>Stay near Jurien Bay.<br /><em>Make a little space.</em></h2></div>
-            <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer">Book Centre Break <Icon name="arrow" size={17} /></a>
+            <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="home-footer-cta">Check dates & rates <Icon name="arrow" size={17} /></a>
           </div>
         </section>
       </main>

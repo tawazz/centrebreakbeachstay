@@ -10,7 +10,7 @@ import { bookingUrl, business, rooms } from "../../lib/content";
 export const metadata: Metadata = {
   title: "Jurien Bay Accommodation Near the Coast",
   description:
-    "Book accommodation near Jurien Bay at Centre Break Beach Stay in Green Head. Choose from double, twin, family and self-contained rooms near Dynamite Bay.",
+    "Book accommodation near Jurien Bay at Centre Break Beach Stay in Green Head. Choose from double, family and self-contained rooms near Dynamite Bay.",
   alternates: {
     canonical: "/jurien-bay-accommodation/",
   },
@@ -44,9 +44,10 @@ export default function JurienBayAccommodationPage() {
             <h1 id="page-title">Accommodation near Jurien Bay<br /><em>by Dynamite Bay.</em></h1>
             <p>Stay at Centre Break Beach Stay in Green Head, around 15 minutes from Jurien Bay and just 50 metres from Dynamite Bay.</p>
             <div className="hero-actions">
-              <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer">Check availability <Icon name="arrow" size={17} /></a>
+              <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="accommodation-hero">Check dates & rates <Icon name="arrow" size={17} /></a>
               <a className="button button-ghost" href="#rooms">Explore rooms</a>
             </div>
+            <p className="booking-helper">Live availability opens in our booking partner.</p>
           </div>
         </section>
 
@@ -61,7 +62,7 @@ export default function JurienBayAccommodationPage() {
             <div className="fact-grid" aria-label="Centre Break Beach Stay location facts">
               <div className="fact-card"><strong>15 min</strong><span>from Jurien Bay</span></div>
               <div className="fact-card"><strong>50m</strong><span>from Dynamite Bay</span></div>
-              <div className="fact-card"><strong>7</strong><span>room options</span></div>
+              <div className="fact-card"><strong>{rooms.length}</strong><span>room options</span></div>
             </div>
           </div>
         </section>
@@ -74,8 +75,8 @@ export default function JurienBayAccommodationPage() {
                 <h2 id="rooms-title">Find your kind<br /><em>of comfortable.</em></h2>
               </div>
               <div className="room-heading-aside">
-                <p>Choose from double, twin, family and self-contained options. Every room includes Wi-Fi, air conditioning, TV and the essentials for a good night’s sleep.</p>
-                <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer">Book your stay <Icon name="arrow" size={17} /></a>
+                <p>Choose from double, family and self-contained options. Compare the room layout, bedding, bathroom access, and amenities before checking current rates.</p>
+                <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="accommodation-rooms-heading">Check dates & rates <Icon name="arrow" size={17} /></a>
               </div>
             </div>
             <div className="room-grid">
@@ -127,7 +128,7 @@ export default function JurienBayAccommodationPage() {
               </details>
               <details className="faq-item">
                 <summary>What room types are available?</summary>
-                <p>Options include budget double, ensuite double, twin, family and self-contained rooms sleeping from two to six guests.</p>
+                <p>Options include budget double, ensuite double, family and self-contained rooms sleeping from two to six guests.</p>
               </details>
               <details className="faq-item">
                 <summary>Is there food onsite?</summary>
@@ -140,7 +141,7 @@ export default function JurienBayAccommodationPage() {
         <section className="booking-section">
           <div className="shell booking-inner">
             <div><p className="eyebrow eyebrow-light">Base yourself here</p><h2>Come for Jurien Bay.<br /><em>Stay by Dynamite Bay.</em></h2></div>
-            <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer">Book your stay <Icon name="arrow" size={17} /></a>
+            <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="accommodation-footer-cta">Check dates & rates <Icon name="arrow" size={17} /></a>
           </div>
         </section>
       </main>

@@ -22,6 +22,8 @@ a { color: inherit; text-decoration: none; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { color: inherit; font: inherit; }
 img { display: block; max-width: 100%; }
+section[id] { scroll-margin-top: 104px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 
 .shell { width: min(1180px, calc(100% - 72px)); margin: 0 auto; }
 .section-pad { padding: 116px 0; }
@@ -65,6 +67,7 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 .hero-content { color: var(--white); padding-bottom: 112px; padding-top: 140px; position: relative; z-index: 1; }
 .hero-copy { color: #f1f6ee; font-size: 1.13rem; max-width: 510px; }
 .hero-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 14px; margin-top: 33px; }
+.booking-helper { color: rgba(241,246,238,0.82); font-size: 0.73rem; margin: 14px 0 0; }
 .hero-note { align-items: center; background: var(--gold); bottom: 0; color: var(--ink); display: flex; gap: 12px; padding: 18px 30px 18px 27px; position: absolute; right: max(36px, calc((100vw - 1180px) / 2)); z-index: 2; }
 .hero-note span { font-size: 1.8rem; font-weight: 800; line-height: 1; }
 .hero-note small { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em; line-height: 1.2; text-transform: uppercase; }
@@ -115,6 +118,7 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 .feature-list span { align-items: center; color: var(--ink-soft); display: inline-flex; font-size: 0.69rem; gap: 4px; }
 .feature-list svg { color: var(--teal); }
 .room-card .text-link { font-size: 0.78rem; margin-top: 17px; }
+.room-card-cta { align-self: flex-start; font-size: 0.72rem; margin-top: 17px; min-height: 48px; padding: 0 15px; }
 
 .food-section { background: var(--sand); }
 .food-layout { align-items: center; display: grid; gap: clamp(55px, 9vw, 125px); grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.78fr); }
@@ -172,6 +176,7 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 .booking-inner { align-items: center; display: flex; justify-content: space-between; min-height: 315px; }
 .booking-inner h2 { margin: 0; }
 .booking-inner h2 em { color: var(--gold); }
+.mobile-booking-bar { display: none; }
 
 .site-footer { background: var(--white); }
 .footer-grid { display: grid; gap: 50px; grid-template-columns: 1.4fr repeat(3, 0.72fr); padding: 76px 0 62px; }
@@ -189,10 +194,10 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 
 .page-hero { min-height: 510px; overflow: hidden; position: relative; }
 .page-hero-content { color: var(--white); padding-bottom: 100px; padding-top: 120px; position: relative; z-index: 1; }
-.page-hero-content > p:last-child { color: #edf6f0; font-size: 1.12rem; max-width: 510px; }
+.page-hero-content > h1 + p { color: #edf6f0; font-size: 1.12rem; max-width: 510px; }
 .activity-page-hero { min-height: 620px; }
 .activity-page-hero .page-hero-content { padding-bottom: 145px; }
-.activity-page-hero .page-hero-content > p:last-child { max-width: 570px; }
+.activity-page-hero .page-hero-content > h1 + p { max-width: 570px; }
 .activity-hero-note { align-items: center; background: var(--gold); bottom: 0; color: var(--ink); display: flex; gap: 13px; padding: 18px 30px 18px 25px; position: absolute; right: max(36px, calc((100vw - 1180px) / 2)); z-index: 2; }
 .activity-hero-note-value { font-size: 2rem; font-weight: 800; letter-spacing: -0.08em; line-height: 1; }
 .activity-hero-note span:last-child { display: flex; flex-direction: column; line-height: 1.2; }
@@ -283,7 +288,7 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 }
 
 @media (max-width: 720px) {
-  body { font-size: 16px; }
+  body { font-size: 16px; padding-bottom: 77px; }
   .shell { width: min(100% - 38px, 550px); }
   .section-pad { padding: 76px 0; }
   .section-pad-small { padding: 52px 0; }
@@ -299,6 +304,8 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
   .mobile-nav.is-open nav { padding-bottom: 22px; padding-top: 9px; }
   .mobile-nav a:not(.button) { border-bottom: 1px solid var(--line); display: block; font-size: 0.82rem; font-weight: 800; letter-spacing: 0.09em; padding: 15px 0; text-transform: uppercase; }
   .mobile-nav .button { margin-top: 17px; width: 100%; }
+  .mobile-booking-bar { background: rgba(255,254,250,0.96); border-top: 1px solid var(--line); bottom: 0; display: block; left: 0; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); position: fixed; right: 0; z-index: 19; }
+  .mobile-booking-bar .button { width: 100%; }
   .hero { min-height: 670px; }
   .hero-overlay { background: linear-gradient(90deg, rgba(7,41,39,0.82), rgba(7,41,39,0.25)), linear-gradient(0deg, rgba(7,41,39,0.5), transparent 55%); }
   .hero-content { padding-bottom: 122px; padding-top: 112px; }
@@ -360,6 +367,7 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 @media (max-width: 480px) {
   .shell { width: min(100% - 32px, 550px); }
   .hero { min-height: 640px; }
+  h1 { font-size: clamp(2.6rem, 13.2vw, 4.1rem); }
   .hero-actions { align-items: stretch; flex-direction: column; }
   .hero-actions .button { width: 100%; }
   .room-card { grid-template-columns: 1fr; }
@@ -442,4 +450,13 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
   .fact-card { min-height: 100px; }
   .detail-card, .restaurant-hours-card { padding: 25px 21px; }
   .detail-card-meta { gap: 24px; }
+}
+
+@media (max-width: 720px) {
+  .room-card-cta { align-self: stretch; width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
 }

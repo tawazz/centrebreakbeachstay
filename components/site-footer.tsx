@@ -32,7 +32,7 @@ export function SiteFooter() {
         <div className="footer-column footer-hours">
           <p className="footer-label">Open 7 days</p>
           <p>{business.restaurantName}<br />{restaurantHours[0].display}<br />{restaurantHours[1].display}</p>
-          <a className="footer-booking" href={bookingUrl} target="_blank" rel="noreferrer">Check availability <span>↗</span></a>
+          <a className="footer-booking" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="footer">Check dates & rates <span>↗</span></a>
         </div>
       </div>
 
