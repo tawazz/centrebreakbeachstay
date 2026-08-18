@@ -29,7 +29,6 @@ export function SiteFooter() {
             <Icon name="email" size={18} />
             <span>Email us</span>
           </a>
-          <p>{business.address.streetAddress}<br />{business.address.addressLocality} {business.address.addressRegion} {business.address.postalCode}</p>
           <p className="footer-label footer-follow-label">Follow along</p>
           <div className="footer-social-links">
             <a className="footer-icon-link" href="https://www.instagram.com/centrebreakbeachstay/" target="_blank" rel="noreferrer">

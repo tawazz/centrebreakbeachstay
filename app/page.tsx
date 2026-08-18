@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Gallery } from "../components/gallery";
 import { Icon } from "../components/icon";
+import { MapEmbed } from "../components/map-embed";
 import { RoomCard } from "../components/room-card";
 import { SiteFooter } from "../components/site-footer";
 import { SiteHeader } from "../components/site-header";
@@ -142,25 +143,7 @@ export default function HomePage() {
               </div>
               <a className="button button-dark" href={business.directionsUrl} target="_blank" rel="noreferrer">Get directions <Icon name="arrow" size={17} /></a>
             </div>
-            <a
-              className="map-card"
-              href={business.directionsUrl}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Open Centre Break Beach Stay in Google Maps"
-            >
-              <span className="map-preview" aria-hidden="true">
-                <span className="map-water" />
-                <span className="map-road map-road-coastal" />
-                <span className="map-road map-road-main" />
-                <span className="map-road map-road-local" />
-                <span className="map-place map-place-green-head">Green Head</span>
-                <span className="map-place map-place-bay">Dynamite Bay</span>
-                <span className="map-marker"><Icon name="pin" size={32} /></span>
-              </span>
-              <span className="map-preview-link">Open in Google Maps <Icon name="arrow" size={16} /></span>
-              <div className="map-badge"><Icon name="pin" size={16} /><span>50 metres<br /><small>from Dynamite Bay</small></span></div>
-            </a>
+            <MapEmbed directionsUrl={business.directionsUrl} mapUrl={business.mapUrl} />
           </div>
         </section>
 

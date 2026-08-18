@@ -25,6 +25,8 @@ export const business = {
   checkOutLabel: "Until 10am",
   directionsUrl:
     "https://www.google.com/maps/dir/?api=1&destination=Centre+Break+Beach+Stay,+1+Green+Head+Road,+Green+Head+WA+6514",
+  mapUrl:
+    "https://www.google.com/maps?q=Centre+Break+Beach+Stay,+1+Green+Head+Road,+Green+Head+WA+6514&output=embed",
   sameAs: [
     "https://www.instagram.com/centrebreakbeachstay/",
     "https://www.facebook.com/centrebreak",
