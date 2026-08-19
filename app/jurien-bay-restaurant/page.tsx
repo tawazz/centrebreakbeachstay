@@ -4,7 +4,7 @@ import { Icon } from "../../components/icon";
 import { SiteFooter } from "../../components/site-footer";
 import { SiteHeader } from "../../components/site-header";
 import { StructuredData } from "../../components/structured-data";
-import { business, menuUrl, restaurantHours } from "../../lib/content";
+import { assetPath, business, menuUrl, restaurantHours } from "../../lib/content";
 
 export const metadata: Metadata = {
   title: "Restaurant Near Jurien Bay",
@@ -36,14 +36,14 @@ export default function JurienBayRestaurantPage() {
       <StructuredData page="restaurant" />
       <main>
         <section className="page-hero restaurant-page-hero" aria-labelledby="page-title">
-          <img src="/images/crayfish.webp" alt="Local seafood at Centre Break Restaurant near Jurien Bay" fetchPriority="high" />
+          <img src={assetPath("/images/crayfish.webp")} alt="Local seafood at Centre Break Restaurant near Jurien Bay" fetchPriority="high" />
           <div className="hero-overlay" />
           <div className="shell page-hero-content">
             <p className="eyebrow eyebrow-light"><Icon name="fork" size={16} /> Restaurant near Jurien Bay · Green Head</p>
             <h1 id="page-title">Restaurant near Jurien Bay<br /><em>in Green Head.</em></h1>
             <p>Centre Break Restaurant is a public, licensed restaurant and café at Centre Break Beach Stay, around 15 minutes from Jurien Bay.</p>
             <div className="hero-actions">
-              <a className="button button-light" href={menuUrl} target="_blank" rel="noreferrer">View the menu <Icon name="arrow" size={17} /></a>
+              <a className="button button-light" href={assetPath(menuUrl)} target="_blank" rel="noreferrer">View the menu <Icon name="arrow" size={17} /></a>
               <a className="button button-ghost" href={business.directionsUrl} target="_blank" rel="noreferrer">Get directions</a>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function JurienBayRestaurantPage() {
               <p className="lead">Make the short drive from Jurien Bay to Green Head for local seafood, easy lunches, hearty dinners and a cold drink beside Dynamite Bay.</p>
               <p>Centre Break Restaurant is onsite at Centre Break Beach Stay and open to the public. Pull up a chair on the shaded patio after a day of swimming, fishing, sea lion tours or exploring the coast.</p>
               <div className="inline-link-row">
-                <a className="text-link" href={menuUrl} target="_blank" rel="noreferrer">Read the menu <Icon name="arrow" size={16} /></a>
+                <a className="text-link" href={assetPath(menuUrl)} target="_blank" rel="noreferrer">Read the menu <Icon name="arrow" size={16} /></a>
                 <Link className="text-link" href="/jurien-bay-accommodation/">Stay near Jurien Bay <Icon name="arrow" size={16} /></Link>
               </div>
             </div>
@@ -73,8 +73,8 @@ export default function JurienBayRestaurantPage() {
         <section className="food-section section-pad restaurant-detail-section" aria-labelledby="restaurant-details-title">
           <div className="shell food-layout">
             <div className="food-image-grid">
-              <img className="food-image-main" src="/images/crayfish.webp" alt="Seafood meal at Centre Break Restaurant" />
-              <img className="food-image-small" src="/images/property-patio.jpg" alt="Shaded patio at Centre Break Restaurant" />
+              <img className="food-image-main" src={assetPath("/images/crayfish.webp")} alt="Seafood meal at Centre Break Restaurant" />
+              <img className="food-image-small" src={assetPath("/images/property-patio.jpg")} alt="Shaded patio at Centre Break Restaurant" />
               <span className="food-stamp">Eat<br /><em>local.</em></span>
             </div>
             <div className="food-copy">
@@ -113,7 +113,7 @@ export default function JurienBayRestaurantPage() {
               </details>
               <details className="faq-item">
                 <summary>Where can I find the menu?</summary>
-                <p><a href={menuUrl} target="_blank" rel="noreferrer">View the Centre Break Restaurant menu</a> before travelling.</p>
+                <p><a href={assetPath(menuUrl)} target="_blank" rel="noreferrer">View the Centre Break Restaurant menu</a> before travelling.</p>
               </details>
             </div>
           </div>

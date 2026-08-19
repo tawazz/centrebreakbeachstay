@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { assetPath } from "../lib/content";
 import { Icon } from "./icon";
 
 const images = [
@@ -18,7 +19,7 @@ export function Gallery() {
       <div className="gallery-grid" aria-label="Centre Break Beach Stay gallery">
         {images.map((image, index) => (
           <button className={`gallery-tile gallery-tile-${index + 1}`} key={image.src} type="button" onClick={() => setSelected(index)}>
-            <img src={image.src} alt={image.alt} />
+            <img src={assetPath(image.src)} alt={image.alt} />
             <span className="gallery-zoom" aria-hidden="true">+</span>
           </button>
         ))}
@@ -29,7 +30,7 @@ export function Gallery() {
           <button className="lightbox-close" type="button" aria-label="Close image preview" onClick={() => setSelected(null)}>
             <Icon name="x" size={22} />
           </button>
-          <img src={images[selected].src} alt={images[selected].alt} onClick={(event) => event.stopPropagation()} />
+          <img src={assetPath(images[selected].src)} alt={images[selected].alt} onClick={(event) => event.stopPropagation()} />
         </div>
       ) : null}
     </>

@@ -1,4 +1,8 @@
 export const siteUrl = "https://centrebreakbeachstay.com.au";
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+export const assetPath = (path: string) =>
+  path.startsWith("http://") || path.startsWith("https://") ? path : `${publicBasePath}${path}`;
+
 const bookingBaseUrl = "https://us2.cloudbeds.com/en/reservation/sqAH3Y";
 export const bookingUrl = `${bookingBaseUrl}?currency=aud`;
 export const menuUrl = "/documents/menu.pdf";

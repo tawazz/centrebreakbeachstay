@@ -1,11 +1,12 @@
 import { Icon } from "./icon";
+import { assetPath } from "../lib/content";
 import type { Room } from "../lib/content";
 
 export function RoomCard({ room, index }: { room: Room; index: number }) {
   return (
     <article className="room-card">
       <div className="room-image-wrap">
-        <img src={room.image} alt={`${room.name} at Centre Break Beach Stay near Jurien Bay`} />
+        <img src={assetPath(room.image)} alt={`${room.name} at Centre Break Beach Stay near Jurien Bay`} />
         <span className="room-number">0{index + 1}</span>
       </div>
       <div className="room-card-body">

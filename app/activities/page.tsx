@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Icon } from "../../components/icon";
 import { SiteFooter } from "../../components/site-footer";
 import { SiteHeader } from "../../components/site-header";
-import { activities, bookingUrl, business, quickActivities } from "../../lib/content";
+import { activities, assetPath, bookingUrl, business, quickActivities } from "../../lib/content";
 
 export const metadata: Metadata = {
   title: "Things to Do Near Jurien Bay & Green Head",
@@ -34,7 +34,7 @@ export default function ActivitiesPage() {
       <SiteHeader />
       <main>
         <section className="page-hero activity-page-hero" aria-labelledby="page-title">
-          <img src="/images/activities.webp" alt="White sand and turquoise water near Jurien Bay and Green Head" fetchPriority="high" />
+          <img src={assetPath("/images/activities.webp")} alt="White sand and turquoise water near Jurien Bay and Green Head" fetchPriority="high" />
           <div className="hero-overlay" />
           <div className="shell page-hero-content">
             <p className="eyebrow eyebrow-light"><Icon name="compass" size={16} /> Jurien Bay & Green Head</p>
@@ -87,7 +87,7 @@ export default function ActivitiesPage() {
 
             <div className="activity-story-grid">
               <article className="activity-story-feature">
-                <img src="/images/activities.webp" alt="Calm white-sand bay near Green Head" />
+                <img src={assetPath("/images/activities.webp")} alt="Calm white-sand bay near Green Head" />
                 <div className="activity-story-overlay">
                   <span>01 · Right outside</span>
                   <h3>Swim, snorkel, repeat.</h3>
@@ -97,7 +97,7 @@ export default function ActivitiesPage() {
               </article>
 
               <article className="activity-story-card">
-                <img src="/images/property-exterior.webp" alt="Shaded outdoor patio at Centre Break Restaurant" />
+                <img src={assetPath("/images/property-exterior.webp")} alt="Shaded outdoor patio at Centre Break Restaurant" />
                 <div className="activity-story-card-copy">
                   <span>02 · Refuel nearby</span>
                   <h3>Lunch without leaving Green Head.</h3>
@@ -106,7 +106,7 @@ export default function ActivitiesPage() {
               </article>
 
               <article className="activity-story-card activity-story-card-welcome">
-                <img src="/images/welcome.webp" alt="Welcome garden entrance at Centre Break Beach Stay" />
+                <img src={assetPath("/images/welcome.webp")} alt="Welcome garden entrance at Centre Break Beach Stay" />
                 <div className="activity-story-card-copy">
                   <span>03 · Come back easy</span>
                   <h3>Keep the evening slow.</h3>
@@ -150,7 +150,7 @@ export default function ActivitiesPage() {
         <section className="stay-close-section" id="stay-close" aria-labelledby="stay-close-title">
           <div className="shell stay-close-grid">
             <div className="stay-close-visual">
-              <img src="/images/room-suite.jpg" alt="Self-contained suite at Centre Break Beach Stay" />
+              <img src={assetPath("/images/room-suite.jpg")} alt="Self-contained suite at Centre Break Beach Stay" />
               <div className="stay-close-badge"><Icon name="bed" size={19} /><span>Sleep close to the coast<small>Check-in from 2pm · check-out 10am</small></span></div>
             </div>
             <div className="stay-close-copy">

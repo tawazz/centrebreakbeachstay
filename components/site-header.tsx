@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { bookingUrl } from "../lib/content";
+import { assetPath, bookingUrl } from "../lib/content";
 import { Icon } from "./icon";
 
 const links = [
@@ -21,7 +21,7 @@ export function SiteHeader() {
       <header className="site-header">
         <div className="shell header-inner">
           <Link href="/" className="brand" aria-label="Centre Break Beach Stay home" onClick={() => setOpen(false)}>
-            <img src="/images/centrebreak-logo.webp" alt="Centre Break Beach Stay" />
+            <img src={assetPath("/images/centrebreak-logo.webp")} alt="Centre Break Beach Stay" />
           </Link>
 
           <nav className="desktop-nav" aria-label="Primary navigation">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { bookingUrl, business, menuUrl, restaurantHours, termsUrl } from "../lib/content";
+import { assetPath, bookingUrl, business, menuUrl, restaurantHours, termsUrl } from "../lib/content";
 import { Icon } from "./icon";
 
 export function SiteFooter() {
@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="shell footer-grid">
         <div className="footer-brand">
           <Link href="/" aria-label="Centre Break Beach Stay home">
-            <img src="/images/centrebreak-logo.webp" alt="Centre Break Beach Stay" />
+            <img src={assetPath("/images/centrebreak-logo.webp")} alt="Centre Break Beach Stay" />
           </Link>
           <p>Accommodation near Jurien Bay in Green Head, 50 metres from Dynamite Bay.</p>
         </div>
@@ -52,8 +52,8 @@ export function SiteFooter() {
       <div className="shell footer-bottom">
         <p>© Centre Break Beach Stay 2026</p>
         <div>
-          <a href={termsUrl} target="_blank" rel="noreferrer">Terms & conditions</a>
-          <a href={menuUrl} target="_blank" rel="noreferrer">Menu PDF</a>
+          <a href={assetPath(termsUrl)} target="_blank" rel="noreferrer">Terms & conditions</a>
+          <a href={assetPath(menuUrl)} target="_blank" rel="noreferrer">Menu PDF</a>
         </div>
       </div>
     </footer>

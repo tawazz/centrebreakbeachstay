@@ -5,6 +5,7 @@ import { SiteFooter } from "../../components/site-footer";
 import { SiteHeader } from "../../components/site-header";
 import { StructuredData } from "../../components/structured-data";
 import {
+  assetPath,
   bookingUrl,
   business,
   greenHeadDayPlan,
@@ -47,7 +48,7 @@ export default function GreenHeadPage() {
       <main>
         <section className="page-hero green-head-hero" aria-labelledby="page-title">
           <img
-            src="/images/activities.webp"
+            src={assetPath("/images/activities.webp")}
             alt="Sheltered turquoise water and white sand at Dynamite Bay near Green Head"
             fetchPriority="high"
           />
@@ -225,7 +226,7 @@ export default function GreenHeadPage() {
           <div className="shell stay-close-grid">
             <div className="stay-close-visual">
               <img
-                src="/images/property-exterior.webp"
+                src={assetPath("/images/property-exterior.webp")}
                 alt="Centre Break Beach Stay accommodation in Green Head"
               />
               <div className="stay-close-badge">
@@ -300,12 +301,12 @@ export default function GreenHeadPage() {
             <div className="food-image-grid">
               <img
                 className="food-image-main"
-                src="/images/crayfish.webp"
+                src={assetPath("/images/crayfish.webp")}
                 alt="Local seafood served at Centre Break Restaurant in Green Head"
               />
               <img
                 className="food-image-small"
-                src="/images/property-patio.jpg"
+                src={assetPath("/images/property-patio.jpg")}
                 alt="Shaded outdoor patio at Centre Break Restaurant"
               />
               <span className="food-stamp">
@@ -342,7 +343,7 @@ export default function GreenHeadPage() {
                 Open 7 days. Hours can change, so check the menu or call ahead before travelling.
               </p>
               <div className="inline-link-row">
-                <a className="button button-dark" href={menuUrl} target="_blank" rel="noreferrer">
+                <a className="button button-dark" href={assetPath(menuUrl)} target="_blank" rel="noreferrer">
                   View the menu <Icon name="arrow" size={17} />
                 </a>
                 <Link className="text-link" href="/jurien-bay-restaurant/">

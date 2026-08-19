@@ -7,6 +7,7 @@ import { SiteFooter } from "../components/site-footer";
 import { SiteHeader } from "../components/site-header";
 import { StructuredData } from "../components/structured-data";
 import {
+  assetPath,
   activities,
   bookingUrl,
   business,
@@ -23,7 +24,7 @@ export default function HomePage() {
       <StructuredData page="home" />
       <main>
         <section className="hero" aria-labelledby="hero-title">
-          <img className="hero-image" src="/images/activities.webp" alt="White sand and turquoise water near Jurien Bay and Green Head" fetchPriority="high" />
+          <img className="hero-image" src={assetPath("/images/activities.webp")} alt="White sand and turquoise water near Jurien Bay and Green Head" fetchPriority="high" />
           <div className="hero-overlay" />
           <div className="shell hero-content">
             <p className="eyebrow eyebrow-light"><Icon name="wave" size={16} /> Jurien Bay area · Green Head</p>
@@ -47,7 +48,7 @@ export default function HomePage() {
             <Link className="text-link" href="/jurien-bay-accommodation/">See Jurien Bay accommodation <Icon name="arrow" size={16} /></Link>
           </div>
           <div className="intro-image-wrap">
-            <img src="/images/welcome.webp" alt="Welcome garden entrance at Centre Break Beach Stay" />
+            <img src={assetPath("/images/welcome.webp")} alt="Welcome garden entrance at Centre Break Beach Stay" />
             <div className="image-caption"><Icon name="spark" size={15} /> Make room for a slower pace</div>
           </div>
         </section>
@@ -84,8 +85,8 @@ export default function HomePage() {
         <section className="food-section section-pad" id="menu" aria-labelledby="food-title">
           <div className="shell food-layout">
             <div className="food-image-grid">
-              <img className="food-image-main" src="/images/crayfish.webp" alt="Local seafood served at Centre Break Restaurant near Jurien Bay" />
-              <img className="food-image-small" src="/images/property-patio.jpg" alt="Outdoor café patio" />
+              <img className="food-image-main" src={assetPath("/images/crayfish.webp")} alt="Local seafood served at Centre Break Restaurant near Jurien Bay" />
+              <img className="food-image-small" src={assetPath("/images/property-patio.jpg")} alt="Outdoor café patio" />
               <span className="food-stamp">Eat<br /><em>local.</em></span>
             </div>
             <div className="food-copy">
@@ -97,7 +98,7 @@ export default function HomePage() {
                 {restaurantHours.map((hours) => <div key={hours.label}><span className="hours-label">{hours.label}</span><strong>{hours.display}</strong></div>)}
               </div>
               <div className="inline-link-row">
-                <a className="text-link" href={menuUrl} target="_blank" rel="noreferrer">View the menu <Icon name="arrow" size={16} /></a>
+                <a className="text-link" href={assetPath(menuUrl)} target="_blank" rel="noreferrer">View the menu <Icon name="arrow" size={16} /></a>
                 <Link className="text-link" href="/jurien-bay-restaurant/">Restaurant details <Icon name="arrow" size={16} /></Link>
               </div>
             </div>
@@ -106,7 +107,7 @@ export default function HomePage() {
 
         <section className="activity-section" id="activities" aria-labelledby="activities-title">
           <div className="activity-visual">
-            <img src="/images/activities.webp" alt="Turquoise water and white sand near Jurien Bay and Green Head" />
+            <img src={assetPath("/images/activities.webp")} alt="Turquoise water and white sand near Jurien Bay and Green Head" />
             <div className="activity-visual-copy"><span>Things to do near Jurien Bay</span><strong>Out here,<br /><em>the day is yours.</em></strong></div>
           </div>
           <div className="shell section-pad activity-content">

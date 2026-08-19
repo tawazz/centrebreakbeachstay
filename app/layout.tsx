@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { siteUrl } from "../lib/content";
+import { assetPath, siteUrl } from "../lib/content";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     images: ["/images/property-exterior.webp"],
   },
   icons: {
-    icon: "/images/centrebreak-logo.webp",
+    icon: assetPath("/images/centrebreak-logo.webp"),
   },
   robots: {
     index: true,
