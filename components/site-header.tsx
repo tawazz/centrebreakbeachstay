@@ -28,7 +28,7 @@ export function SiteHeader() {
             {links.map((link) => (
               <Link key={link.href} href={link.href}>{link.label}</Link>
             ))}
-            <a className="button button-small" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="header-desktop">
+            <a className="button button-small" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="header-desktop">
               Check dates & rates <Icon name="arrow" size={16} />
             </a>
           </nav>
@@ -49,7 +49,7 @@ export function SiteHeader() {
             {links.map((link) => (
               <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>{link.label}</Link>
             ))}
-            <a className="button" href={bookingUrl} target="_blank" rel="noreferrer" onClick={() => setOpen(false)} data-booking-placement="header-mobile-menu">
+            <a className="button" href={bookingUrl} target="_blank" rel="noopener" onClick={() => setOpen(false)} data-booking-placement="header-mobile-menu">
               Check dates & rates <Icon name="arrow" size={17} />
             </a>
           </nav>
@@ -58,7 +58,7 @@ export function SiteHeader() {
       </header>
 
       <aside className="mobile-booking-bar" aria-label="Booking shortcut">
-        <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="mobile-sticky">
+        <a className="button button-dark" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="mobile-sticky">
           Check dates & rates <Icon name="arrow" size={17} />
         </a>
       </aside>

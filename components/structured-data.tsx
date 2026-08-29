@@ -1,4 +1,11 @@
-import { business, greenHeadFaqs, menuUrl, restaurantHours, siteUrl } from "../lib/content";
+import {
+  accommodationFaqs,
+  business,
+  greenHeadFaqs,
+  menuUrl,
+  restaurantHours,
+  siteUrl,
+} from "../lib/content";
 
 type StructuredDataProps = {
   page: "home" | "accommodation" | "restaurant" | "green-head";
@@ -114,11 +121,44 @@ export function StructuredData({ page }: StructuredDataProps) {
     })),
   };
 
+  const accommodationBreadcrumb = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${siteUrl}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Jurien Bay accommodation",
+        item: `${siteUrl}/jurien-bay-accommodation/`,
+      },
+    ],
+  };
+
+  const accommodationFaq = {
+    "@type": "FAQPage",
+    "@id": `${siteUrl}/jurien-bay-accommodation/#faq`,
+    mainEntity: accommodationFaqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   const graph =
     page === "restaurant"
       ? [hotel, restaurant]
       : page === "green-head"
         ? [hotel, restaurant, destination, breadcrumb, faq]
+        : page === "accommodation"
+          ? [hotel, accommodationBreadcrumb, accommodationFaq]
         : [hotel];
   const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(
     /</g,

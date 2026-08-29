@@ -72,7 +72,7 @@ export default function GreenHeadPage() {
                 className="button button-light"
                 href={bookingUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 data-booking-placement="green-head-hero"
               >
                 Check dates &amp; rates <Icon name="arrow" size={17} />
@@ -283,7 +283,7 @@ export default function GreenHeadPage() {
                   className="button button-dark"
                   href={bookingUrl}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener"
                   data-booking-placement="green-head-stay"
                 >
                   Check dates &amp; rates <Icon name="arrow" size={17} />
@@ -464,7 +464,7 @@ export default function GreenHeadPage() {
               className="button button-light"
               href={bookingUrl}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               data-booking-placement="green-head-footer-cta"
             >
               Check dates &amp; rates <Icon name="arrow" size={17} />

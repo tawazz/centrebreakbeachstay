@@ -3,7 +3,7 @@ const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 export const assetPath = (path: string) =>
   path.startsWith("http://") || path.startsWith("https://") ? path : `${publicBasePath}${path}`;
 
-const bookingBaseUrl = "https://us2.cloudbeds.com/en/reservation/sqAH3Y";
+const bookingBaseUrl = "https://us2.cloudbeds.com/reservation/sqAH3Y";
 export const bookingUrl = `${bookingBaseUrl}?currency=aud`;
 export const menuUrl = "/documents/menu.pdf";
 export const termsUrl = "/documents/terms-and-conditions.pdf";
@@ -123,6 +123,38 @@ export const rooms: Room[] = [
     bookingUrl: roomBookingUrl("63563852673161"),
   },
 ];
+
+export const accommodationFaqs = [
+  {
+    question: "Is Centre Break Beach Stay in Jurien Bay?",
+    answer:
+      "Centre Break Beach Stay is in Green Head, around 15 minutes from Jurien Bay along Indian Ocean Drive.",
+  },
+  {
+    question: "How long is the drive from Centre Break to Jurien Bay?",
+    answer:
+      "Allow around 15 minutes by car from Centre Break Beach Stay in Green Head to Jurien Bay.",
+  },
+  {
+    question: "How close is the beach?",
+    answer: "Dynamite Bay is approximately 50 metres from Centre Break Beach Stay.",
+  },
+  {
+    question: "Which rooms suit couples, families and groups?",
+    answer:
+      "Double rooms suit two guests, the 1-bedroom suite sleeps three, family rooms sleep four or five, and the 2-bedroom self-contained suite sleeps up to six guests.",
+  },
+  {
+    question: "Do all rooms have a private bathroom?",
+    answer:
+      "Bathroom arrangements vary by room. The Budget Double Room has shared bathroom access, the Family Room has a private bathroom next door, and the other listed room options include an ensuite.",
+  },
+  {
+    question: "Is there food onsite?",
+    answer:
+      "Centre Break Restaurant is open to the public seven days a week for lunch from 11am–2pm and dinner from 5pm–7pm.",
+  },
+] as const;
 
 export type Activity = {
   title: string;

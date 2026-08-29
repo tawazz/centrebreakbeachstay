@@ -42,7 +42,7 @@ export default function ActivitiesPage() {
             <p>Sleep 50 metres from Dynamite Bay, then choose your own kind of day — sea lions, quiet coves, wildflowers, walks and wide-open coast.</p>
             <div className="hero-actions">
               <a className="button button-light" href="#day-plan">See the day plan <Icon name="arrow" size={17} /></a>
-              <a className="button button-ghost" href={bookingUrl} target="_blank" rel="noreferrer">Check dates & rates <Icon name="arrow" size={17} /></a>
+              <a className="button button-ghost" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="activities-hero">Check dates & rates <Icon name="arrow" size={17} /></a>
             </div>
           </div>
           <div className="activity-hero-note" aria-label="Distance to Dynamite Bay">
@@ -70,7 +70,7 @@ export default function ActivitiesPage() {
                 <div><strong>15 min</strong><span>to Jurien Bay</span></div>
               </div>
               <p>Check in, drop your bags, and keep the coast within reach from the first swim to the last sunset.</p>
-                <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer">Check dates & rates <Icon name="arrow" size={17} /></a>
+                <a className="button button-dark" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="activities-proximity">Check dates & rates <Icon name="arrow" size={17} /></a>
             </aside>
           </div>
         </section>
@@ -163,7 +163,7 @@ export default function ActivitiesPage() {
                 <li><Icon name="compass" size={20} /><span><strong>{business.distanceToJurienBay} to Jurien Bay</strong> when you want to make the day bigger.</span></li>
               </ul>
               <div className="inline-link-row">
-                  <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer">Check dates & rates <Icon name="arrow" size={17} /></a>
+                  <a className="button button-dark" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="activities-stay">Check dates & rates <Icon name="arrow" size={17} /></a>
                 <Link className="text-link" href="/jurien-bay-accommodation/">View all rooms <Icon name="arrow" size={16} /></Link>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function ActivitiesPage() {
         </section>
 
         <section className="booking-section">
-          <div className="shell booking-inner"><div><p className="eyebrow eyebrow-light">Ready when you are</p><h2>Come for the coast.<br /><em>Stay for the quiet.</em></h2></div><a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer">Check dates & rates <Icon name="arrow" size={17} /></a></div>
+          <div className="shell booking-inner"><div><p className="eyebrow eyebrow-light">Ready when you are</p><h2>Come for the coast.<br /><em>Stay for the quiet.</em></h2></div><a className="button button-light" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="activities-footer-cta">Check dates & rates <Icon name="arrow" size={17} /></a></div>
         </section>
       </main>
       <SiteFooter />

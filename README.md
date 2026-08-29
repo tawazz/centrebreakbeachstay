@@ -16,3 +16,7 @@ npm run build
 ```
 
 The exported site is written to `out/`.
+
+## Booking growth handoff
+
+The Jurien Bay booking, attribution, launch QA and account-action checklist lives in [`docs/jurien-bay-booking-growth.md`](docs/jurien-bay-booking-growth.md).

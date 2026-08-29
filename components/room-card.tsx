@@ -24,9 +24,10 @@ export function RoomCard({ room, index }: { room: Room; index: number }) {
           className="button button-dark room-card-cta"
           href={room.bookingUrl}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener"
           aria-label={`Check dates and rates for ${room.name}`}
           data-booking-placement={`room-${room.name}`}
+          data-booking-room-name={room.name}
         >
           Check dates & rates <Icon name="arrow" size={16} />
         </a>

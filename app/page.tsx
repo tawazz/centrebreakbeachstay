@@ -31,7 +31,7 @@ export default function HomePage() {
             <h1 id="hero-title">Jurien Bay accommodation<br /><em>by the sea.</em></h1>
             <p className="hero-copy">Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay, with comfortable rooms for couples and families.</p>
             <div className="hero-actions">
-              <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="home-hero">Check dates & rates <Icon name="arrow" size={17} /></a>
+              <a className="button button-light" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="home-hero">Check dates & rates <Icon name="arrow" size={17} /></a>
               <Link className="button button-ghost" href="/jurien-bay-accommodation/">Explore rooms</Link>
             </div>
             <p className="booking-helper">Live availability opens in our booking partner.</p>
@@ -73,7 +73,7 @@ export default function HomePage() {
               </div>
               <div className="room-heading-aside">
                 <p>Compare room size, bedding, bathroom access, and amenities here. Choose your dates and guests to see current rates through our booking partner.</p>
-                <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="home-rooms-heading">Check dates & rates <Icon name="arrow" size={17} /></a>
+                <a className="button button-dark" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="home-rooms-heading">Check dates & rates <Icon name="arrow" size={17} /></a>
               </div>
             </div>
             <div className="room-grid">
@@ -151,7 +151,7 @@ export default function HomePage() {
         <section className="booking-section">
           <div className="shell booking-inner">
             <div><p className="eyebrow eyebrow-light">Ready when you are</p><h2>Stay near Jurien Bay.<br /><em>Make a little space.</em></h2></div>
-            <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="home-footer-cta">Check dates & rates <Icon name="arrow" size={17} /></a>
+            <a className="button button-light" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="home-footer-cta">Check dates & rates <Icon name="arrow" size={17} /></a>
           </div>
         </section>
       </main>

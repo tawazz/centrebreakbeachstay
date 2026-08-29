@@ -1,31 +1,30 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { Icon } from "../../components/icon";
 import { RoomCard } from "../../components/room-card";
 import { SiteFooter } from "../../components/site-footer";
 import { SiteHeader } from "../../components/site-header";
 import { StructuredData } from "../../components/structured-data";
-import { assetPath, bookingUrl, business, rooms } from "../../lib/content";
+import { accommodationFaqs, assetPath, bookingUrl, business, rooms } from "../../lib/content";
 
 export const metadata: Metadata = {
-  title: "Jurien Bay Accommodation Near the Coast",
+  title: "Jurien Bay Accommodation, 15 Minutes Away",
   description:
-    "Book accommodation near Jurien Bay at Centre Break Beach Stay in Green Head. Choose from double, family and self-contained rooms near Dynamite Bay.",
+    "Looking for Jurien Bay accommodation? Centre Break Beach Stay is in Green Head, 15 minutes away and 50 metres from Dynamite Bay, with rooms for 2–6 guests.",
   alternates: {
     canonical: "/jurien-bay-accommodation/",
   },
   openGraph: {
-    title: "Jurien Bay Accommodation Near the Coast",
+    title: "Jurien Bay Accommodation, 15 Minutes Away",
     description:
-      "Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay, with rooms for couples, families and coastal stopovers.",
+      "Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay, with rooms for couples, families and groups up to six.",
     url: "/jurien-bay-accommodation/",
     images: ["/images/property-exterior.webp"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jurien Bay Accommodation Near the Coast",
+    title: "Jurien Bay Accommodation, 15 Minutes Away",
     description:
-      "Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay, with rooms for couples, families and coastal stopovers.",
+      "Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay, with rooms for couples, families and groups up to six.",
     images: ["/images/property-exterior.webp"],
   },
 };
@@ -41,23 +40,24 @@ export default function JurienBayAccommodationPage() {
           <div className="hero-overlay" />
           <div className="shell page-hero-content">
             <p className="eyebrow eyebrow-light"><Icon name="pin" size={16} /> Jurien Bay accommodation · Green Head</p>
-            <h1 id="page-title">Accommodation near Jurien Bay<br /><em>by Dynamite Bay.</em></h1>
-            <p>Stay at Centre Break Beach Stay in Green Head, around 15 minutes from Jurien Bay and just 50 metres from Dynamite Bay.</p>
+            <h1 id="page-title">Jurien Bay accommodation<br /><em>15 minutes away.</em></h1>
+            <p>Centre Break Beach Stay is in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay. Choose a room for 2–6 guests and check current availability.</p>
             <div className="hero-actions">
-              <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="accommodation-hero">Check dates & rates <Icon name="arrow" size={17} /></a>
+              <a className="button button-light" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="accommodation-hero">Check dates & rates <Icon name="arrow" size={17} /></a>
               <a className="button button-ghost" href="#rooms">Explore rooms</a>
             </div>
             <p className="booking-helper">Live availability opens in our booking partner.</p>
           </div>
+          <div className="hero-note" aria-label="Distance to Dynamite Bay"><span>50m</span><small>to Dynamite Bay</small></div>
         </section>
 
         <section className="answer-section section-pad-small" aria-labelledby="accommodation-answer-title">
           <div className="shell answer-layout">
             <div className="answer-copy">
-              <p className="eyebrow">A quieter Jurien Bay base</p>
-              <h2 id="accommodation-answer-title">Looking for Jurien Bay accommodation?</h2>
-              <p className="lead">Centre Break Beach Stay is in Green Head, a small coastal village 15 minutes from Jurien Bay along Indian Ocean Drive.</p>
-              <p>It is a practical base for visitors coming north for sea lion tours, beaches, fishing, snorkelling, wildflowers and other Jurien Bay area activities. Come back to a comfortable room, a nearby beach and an onsite restaurant for lunch or dinner.</p>
+              <p className="eyebrow">Jurien Bay close · Green Head closer to the beach</p>
+              <h2 id="accommodation-answer-title">Jurien Bay close.<br /><em>Dynamite Bay closer.</em></h2>
+              <p className="lead">Centre Break Beach Stay sits in Green Head, a small coastal village around 15 minutes from Jurien Bay along Indian Ocean Drive.</p>
+              <p>Choose a quieter base with a 50-metre walk to Dynamite Bay and rooms that match your group. Sea lion tours, fishing, snorkelling and wildflowers fit into the wider Jurien Bay trip, with the restaurant onsite when you return.</p>
             </div>
             <div className="fact-grid" aria-label="Centre Break Beach Stay location facts">
               <div className="fact-card"><strong>15 min</strong><span>from Jurien Bay</span></div>
@@ -71,12 +71,21 @@ export default function JurienBayAccommodationPage() {
           <div className="shell section-pad">
             <div className="section-heading section-heading-row rooms-heading">
               <div>
-                <p className="eyebrow">Rooms for coastal stopovers</p>
-                <h2 id="rooms-title">Find your kind<br /><em>of comfortable.</em></h2>
+                <p className="eyebrow">Rooms for couples, families & stopovers</p>
+                <h2 id="rooms-title">Choose the room<br /><em>that fits.</em></h2>
               </div>
               <div className="room-heading-aside">
-                <p>Choose from double, family and self-contained options. Compare the room layout, bedding, bathroom access, and amenities before checking current rates.</p>
-                <a className="button button-dark" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="accommodation-rooms-heading">Check dates & rates <Icon name="arrow" size={17} /></a>
+                <p>Compare the room layout, bedding, bathroom access and amenities before checking current rates through our booking partner.</p>
+                <a className="button button-dark" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="accommodation-rooms-heading">Check dates & rates <Icon name="arrow" size={17} /></a>
+              </div>
+            </div>
+            <div className="room-fit-guide" aria-labelledby="room-fit-title">
+              <p className="eyebrow" id="room-fit-title">Match the room to the trip</p>
+              <div className="room-fit-grid">
+                <article className="room-fit-card"><span>01</span><h3>Overnight stopovers</h3><p>Choose a double room for a simple night on the road.</p></article>
+                <article className="room-fit-card"><span>02</span><h3>Couples</h3><p>Choose a double room or the 1-bedroom suite when you want more room.</p></article>
+                <article className="room-fit-card"><span>03</span><h3>Families</h3><p>Family rooms sleep four or five, with the layout shown on each card.</p></article>
+                <article className="room-fit-card"><span>04</span><h3>Groups up to 6</h3><p>The 2-bedroom self-contained suite gives larger groups a kitchen and separate sleeping areas.</p></article>
               </div>
             </div>
             <div className="room-grid">
@@ -88,13 +97,13 @@ export default function JurienBayAccommodationPage() {
         <section className="jurien-detail-section section-pad-small" aria-labelledby="stay-details-title">
           <div className="shell jurien-detail-grid">
             <div>
-              <p className="eyebrow">Plan your Jurien Bay stay</p>
-              <h2 id="stay-details-title">Stay close to<br /><em>the day.</em></h2>
-              <p className="lead">Base yourself in Green Head and spend the day exploring the Jurien Bay region before returning to Dynamite Bay.</p>
+              <p className="eyebrow">Know the setup before you book</p>
+              <h2 id="stay-details-title">Clear details.<br /><em>Easy arrival.</em></h2>
+              <p className="lead">Pick a room from the facts below, then use the live booking page to confirm dates, guests and current rates.</p>
               <ul className="detail-list">
-                <li><Icon name="check" size={16} /> Sea lion tours and coastal activities nearby</li>
-                <li><Icon name="check" size={16} /> Swimming, snorkelling, fishing and kayaking</li>
-                <li><Icon name="check" size={16} /> Three Bays Walkway and wildflowers inland</li>
+                <li><Icon name="check" size={16} /> Each room card shows occupancy, bedding, bathroom access and key amenities</li>
+                <li><Icon name="check" size={16} /> Choose shared, private-next-door or ensuite bathroom arrangements</li>
+                <li><Icon name="check" size={16} /> Check-in from 2pm and check-out by 10am</li>
                 <li><Icon name="check" size={16} /> Centre Break Restaurant onsite for lunch and dinner</li>
               </ul>
             </div>
@@ -102,6 +111,7 @@ export default function JurienBayAccommodationPage() {
               <p className="eyebrow">Good to know</p>
               <h3>{business.name}</h3>
               <p>{business.address.streetAddress}<br />{business.address.addressLocality} {business.address.addressRegion} {business.address.postalCode}</p>
+              <p className="detail-card-note">Green Head, not Jurien Bay. Allow around 15 minutes along Indian Ocean Drive.</p>
               <div className="detail-card-meta">
                 <span><strong>Check-in</strong>{business.checkInLabel}</span>
                 <span><strong>Check-out</strong>{business.checkOutLabel}</span>
@@ -118,22 +128,12 @@ export default function JurienBayAccommodationPage() {
               <h2 id="accommodation-faq-title">Before you<br /><em>make a booking.</em></h2>
             </div>
             <div className="faq-list">
-              <details className="faq-item">
-                <summary>Is Centre Break Beach Stay in Jurien Bay?</summary>
-                <p>No. Centre Break Beach Stay is in Green Head, around 15 minutes from Jurien Bay along Indian Ocean Drive.</p>
-              </details>
-              <details className="faq-item">
-                <summary>How close is the beach?</summary>
-                <p>Dynamite Bay is approximately 50 metres from Centre Break Beach Stay.</p>
-              </details>
-              <details className="faq-item">
-                <summary>What room types are available?</summary>
-                <p>Options include budget double, ensuite double, family and self-contained rooms sleeping from two to six guests.</p>
-              </details>
-              <details className="faq-item">
-                <summary>Is there food onsite?</summary>
-                <p>Centre Break Restaurant is open to the public seven days a week for lunch from 11am–2pm and dinner from 5pm–7pm.</p>
-              </details>
+              {accommodationFaqs.map((faq) => (
+                <details className="faq-item" key={faq.question}>
+                  <summary>{faq.question}</summary>
+                  <p>{faq.answer}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>
@@ -141,7 +141,7 @@ export default function JurienBayAccommodationPage() {
         <section className="booking-section">
           <div className="shell booking-inner">
             <div><p className="eyebrow eyebrow-light">Base yourself here</p><h2>Come for Jurien Bay.<br /><em>Stay by Dynamite Bay.</em></h2></div>
-            <a className="button button-light" href={bookingUrl} target="_blank" rel="noreferrer" data-booking-placement="accommodation-footer-cta">Check dates & rates <Icon name="arrow" size={17} /></a>
+            <a className="button button-light" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="accommodation-footer-cta">Check dates & rates <Icon name="arrow" size={17} /></a>
           </div>
         </section>
       </main>
