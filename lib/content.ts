@@ -59,8 +59,7 @@ export const rooms: Room[] = [
   {
     name: "Budget Double Room",
     eyebrow: "Shared bathroom",
-    image:
-      "https://h-img3.us2.cloudbeds.com/uploads/60834516611264/screenshot_2025-02-04_at_5.54.44pm~~67a1e3fe57bd7.jpeg",
+    image: "/images/room-budget-bright.webp",
     description:
       "A comfortable queen room with tea and coffee facilities, air conditioning, TV, and shared bathroom access for an easy overnight stay.",
     sleeps: "2 guests",
@@ -71,7 +70,7 @@ export const rooms: Room[] = [
   {
     name: "Ensuite Double Room",
     eyebrow: "Ocean views or deck",
-    image: "/images/room-ensuite-double.png",
+    image: "/images/room-ensuite-double-bright.webp",
     description:
       "A bright modern room with a queen bed, ensuite bathroom, air conditioning, flat-screen TV, tea and coffee, and the option of ocean views or a private deck.",
     sleeps: "2 guests",
@@ -82,7 +81,7 @@ export const rooms: Room[] = [
   {
     name: "1-bedroom self-contained suite",
     eyebrow: "Sleeps 3 · views to Dynamite Bay",
-    image: "/images/room-suite.jpg",
+    image: "/images/room-suite-bright-v2.webp",
     description:
       "A home away from home for a couple or small family, with a queen bed, single bed, ensuite bathroom, kitchenette, TV, and balcony access.",
     sleeps: "3 guests",
@@ -93,7 +92,7 @@ export const rooms: Room[] = [
   {
     name: "Family Room",
     eyebrow: "Private bathroom next door",
-    image: "/images/room-family.jpg",
+    image: "/images/room-family-bright.webp",
     description:
       "A downstairs family room with a queen bed and bunk bed, coffee-making facilities, TV, and a private bathroom and toilet located next door.",
     sleeps: "4 guests",
@@ -104,7 +103,7 @@ export const rooms: Room[] = [
   {
     name: "Family ensuite unit",
     eyebrow: "Sleeps 5 · 2 rooms · deck access",
-    image: "/images/room-family-ensuite.webp",
+    image: "/images/room-family-ensuite-bright.webp",
     description:
       "Two connected rooms with two queen beds and a single bed, ensuite bathroom, air conditioning, flat-screen TV, tea and coffee, and access to the deck.",
     sleeps: "5 guests",
@@ -115,7 +114,7 @@ export const rooms: Room[] = [
   {
     name: "2-bedroom self-contained suite",
     eyebrow: "Sleeps 6 · ocean views",
-    image: "/images/room-two-bedroom.jpg",
+    image: "/images/room-two-bedroom-bright.webp",
     description:
       "A spacious family setup with a queen room and a bunk room, full kitchenette, air conditioning, ensuite bathroom, balcony access, and ocean views.",
     sleeps: "6 guests",

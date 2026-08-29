@@ -150,7 +150,7 @@ export default function ActivitiesPage() {
         <section className="stay-close-section" id="stay-close" aria-labelledby="stay-close-title">
           <div className="shell stay-close-grid">
             <div className="stay-close-visual">
-              <img src={assetPath("/images/room-suite.jpg")} alt="Self-contained suite at Centre Break Beach Stay" />
+              <img src={assetPath("/images/room-suite-bright-v2.webp")} alt="Self-contained suite at Centre Break Beach Stay" />
               <div className="stay-close-badge"><Icon name="bed" size={19} /><span>Sleep close to the coast<small>Check-in from 2pm · check-out 10am</small></span></div>
             </div>
             <div className="stay-close-copy">

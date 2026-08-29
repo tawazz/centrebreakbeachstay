@@ -1,0 +1,358 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Centre Break Beach Stay home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Centre Break Beach Stay" [ref=e5]
+      - navigation "Primary navigation" [ref=e6]:
+        - link "Green Head" [ref=e7] [cursor=pointer]:
+          - /url: /green-head/
+        - link "Rooms" [ref=e8] [cursor=pointer]:
+          - /url: /jurien-bay-accommodation/
+        - link "Activities" [ref=e9] [cursor=pointer]:
+          - /url: /activities/
+        - link "Restaurant" [ref=e10] [cursor=pointer]:
+          - /url: /jurien-bay-restaurant/
+        - link "Find us" [ref=e11] [cursor=pointer]:
+          - /url: /#location
+        - link "Check dates & rates" [ref=e12] [cursor=pointer]:
+          - /url: https://us2.cloudbeds.com/en/reservation/sqAH3Y?currency=aud
+  - main [ref=e15]:
+    - region [ref=e16]:
+      - img "White sand and turquoise water near Jurien Bay and Green Head" [ref=e17]
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: Jurien Bay area · Green Head
+        - heading [level=1] [ref=e24]:
+          - text: Jurien Bay accommodation
+          - emphasis [ref=e25]: by the sea.
+        - paragraph [ref=e26]: Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay, with comfortable rooms for couples and families.
+        - generic [ref=e27]:
+          - link "Check dates & rates" [ref=e28] [cursor=pointer]:
+            - /url: https://us2.cloudbeds.com/en/reservation/sqAH3Y?currency=aud
+          - link "Explore rooms" [ref=e31] [cursor=pointer]:
+            - /url: /jurien-bay-accommodation/
+        - paragraph [ref=e32]: Live availability opens in our booking partner.
+      - generic [ref=e33]:
+        - generic [ref=e34]: 50m
+        - generic [ref=e35]: to Dynamite Bay
+    - region [ref=e36]:
+      - generic [ref=e37]:
+        - paragraph [ref=e38]: Stay near Jurien Bay
+        - heading [level=2] [ref=e39]:
+          - text: A simple place to
+          - emphasis [ref=e40]: disappear.
+        - paragraph [ref=e41]: Centre Break Beach Stay is in Green Head, around 15 minutes from Jurien Bay and just 50 metres from Dynamite Bay.
+        - paragraph [ref=e42]: Choose from ensuite queen, family, and self-contained rooms. Centre Break Restaurant is onsite for licensed lunch and dinner when you would rather stay close to the water.
+        - link "See Jurien Bay accommodation" [ref=e43] [cursor=pointer]:
+          - /url: /jurien-bay-accommodation/
+      - generic [ref=e46]:
+        - img "Welcome garden entrance at Centre Break Beach Stay" [ref=e47]
+        - generic [ref=e48]: Make room for a slower pace
+    - region "Property gallery" [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - paragraph [ref=e55]: The stay
+          - heading "Come as you are." [level=2] [ref=e56]
+        - paragraph [ref=e57]: Rooms to suit a quick Jurien Bay coastal escape, an easy family holiday, or a few extra days of doing absolutely nothing.
+      - generic "Centre Break Beach Stay gallery" [ref=e58]:
+        - button [ref=e59] [cursor=pointer]:
+          - img "Centre Break Beach Stay exterior" [ref=e60]
+          - generic [ref=e61]: +
+        - button [ref=e62] [cursor=pointer]:
+          - img "Shaded outdoor patio with tables and chairs" [ref=e63]
+          - generic [ref=e64]: +
+        - button [ref=e65] [cursor=pointer]:
+          - img "Centre Break Beach Stay front desk" [ref=e66]
+          - generic [ref=e67]: +
+        - button [ref=e68] [cursor=pointer]:
+          - img "Welcome garden entrance" [ref=e69]
+          - generic [ref=e70]: +
+    - region [ref=e71]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - paragraph [ref=e75]: Jurien Bay accommodation · rooms & availability
+            - heading [level=2] [ref=e76]:
+              - text: Choose your
+              - emphasis [ref=e77]: room.
+          - generic [ref=e78]:
+            - paragraph [ref=e79]: Compare room size, bedding, bathroom access, and amenities here. Choose your dates and guests to see current rates through our booking partner.
+            - link "Check dates & rates" [ref=e80] [cursor=pointer]:
+              - /url: https://us2.cloudbeds.com/en/reservation/sqAH3Y?currency=aud
+        - generic [ref=e83]:
+          - article [ref=e84]:
+            - generic [ref=e85]:
+              - img "Budget Double Room at Centre Break Beach Stay near Jurien Bay" [ref=e86]
+              - generic [ref=e87]: "01"
+            - generic [ref=e88]:
+              - paragraph [ref=e89]: Shared bathroom
+              - heading "Budget Double Room" [level=3] [ref=e90]
+              - paragraph [ref=e91]: A comfortable queen room with tea and coffee facilities, air conditioning, TV, and shared bathroom access for an easy overnight stay.
+              - generic [ref=e92]:
+                - generic [ref=e93]: 2 guests
+                - generic [ref=e97]: 1 queen bed
+              - generic [ref=e102]:
+                - generic [ref=e103]: A/C
+                - generic [ref=e106]: Wi-Fi
+                - generic [ref=e109]: TV
+                - generic [ref=e112]: Shared bathroom
+                - generic [ref=e115]: Towels
+              - link "Check dates and rates for Budget Double Room" [ref=e118] [cursor=pointer]:
+                - /url: https://us2.cloudbeds.com/en/reservation/sqAH3Y?rid=62357956051080&currency=aud
+                - text: Check dates & rates
+          - article [ref=e121]:
+            - generic [ref=e122]:
+              - img "Ensuite Double Room at Centre Break Beach Stay near Jurien Bay" [ref=e123]
+              - generic [ref=e124]: "02"
+            - generic [ref=e125]:
+              - paragraph [ref=e126]: Ocean views or deck
+              - heading "Ensuite Double Room" [level=3] [ref=e127]
+              - paragraph [ref=e128]: A bright modern room with a queen bed, ensuite bathroom, air conditioning, flat-screen TV, tea and coffee, and the option of ocean views or a private deck.
+              - generic [ref=e129]:
+                - generic [ref=e130]: 2 guests
+                - generic [ref=e134]: 1 queen bed
+              - generic [ref=e139]:
+                - generic [ref=e140]: A/C
+                - generic [ref=e143]: Wi-Fi
+                - generic [ref=e146]: TV
+                - generic [ref=e149]: Shower
+                - generic [ref=e152]: Towels
+              - link "Check dates and rates for Ensuite Double Room" [ref=e155] [cursor=pointer]:
+                - /url: https://us2.cloudbeds.com/en/reservation/sqAH3Y?rid=63550677651593&currency=aud
+                - text: Check dates & rates
+          - article [ref=e158]:
+            - generic [ref=e159]:
+              - img "1-bedroom self-contained suite at Centre Break Beach Stay near Jurien Bay" [ref=e160]
+              - generic [ref=e161]: "03"
+            - generic [ref=e162]:
+              - paragraph [ref=e163]: Sleeps 3 · views to Dynamite Bay
+              - heading "1-bedroom self-contained suite" [level=3] [ref=e164]
+              - paragraph [ref=e165]: A home away from home for a couple or small family, with a queen bed, single bed, ensuite bathroom, kitchenette, TV, and balcony access.
+              - generic [ref=e166]:
+                - generic [ref=e167]: 3 guests
+                - generic [ref=e171]: 1 queen + 1 single
+              - generic [ref=e176]:
+                - generic [ref=e177]: Kitchenette
+                - generic [ref=e180]: A/C
+                - generic [ref=e183]: Wi-Fi
+                - generic [ref=e186]: TV
+                - generic [ref=e189]: Balcony
+              - link "Check dates and rates for 1-bedroom self-contained suite" [ref=e192] [cursor=pointer]:
+                - /url: https://us2.cloudbeds.com/en/reservation/sqAH3Y?rid=63560894251205&currency=aud
+                - text: Check dates & rates
+          - article [ref=e195]:
+            - generic [ref=e196]:
+              - img "Family Room at Centre Break Beach Stay near Jurien Bay" [ref=e197]
+              - generic [ref=e198]: "04"
+            - generic [ref=e199]:
+              - paragraph [ref=e200]: Private bathroom next door
+              - heading "Family Room" [level=3] [ref=e201]
+              - paragraph [ref=e202]: A downstairs family room with a queen bed and bunk bed, coffee-making facilities, TV, and a private bathroom and toilet located next door.
+              - generic [ref=e203]:
+                - generic [ref=e204]: 4 guests
+                - generic [ref=e208]: 1 queen + 2 bunks
+              - generic [ref=e213]:
+                - generic [ref=e214]: A/C
+                - generic [ref=e217]: Wi-Fi
+                - generic [ref=e220]: TV
+                - generic [ref=e223]: Shower
+                - generic [ref=e226]: Towels
+              - link "Check dates and rates for Family Room" [ref=e229] [cursor=pointer]:
+                - /url: https://us2.cloudbeds.com/en/reservation/sqAH3Y?rid=63560385978501&currency=aud
+                - text: Check dates & rates
+          - article [ref=e232]:
+            - generic [ref=e233]:
+              - img "Family ensuite unit at Centre Break Beach Stay near Jurien Bay" [ref=e234]
+              - generic [ref=e235]: "05"
+            - generic [ref=e236]:
+              - paragraph [ref=e237]: Sleeps 5 · 2 rooms · deck access
+              - heading "Family ensuite unit" [level=3] [ref=e238]
+              - paragraph [ref=e239]: Two connected rooms with two queen beds and a single bed, ensuite bathroom, air conditioning, flat-screen TV, tea and coffee, and access to the deck.
+              - generic [ref=e240]:
+                - generic [ref=e241]: 5 guests
+                - generic [ref=e245]: 2 queens + 1 single
+              - generic [ref=e250]:
+                - generic [ref=e251]: A/C
+                - generic [ref=e254]: Wi-Fi
+                - generic [ref=e257]: TV
+                - generic [ref=e260]: Shower
+                - generic [ref=e263]: Deck
+              - link "Check dates and rates for Family ensuite unit" [ref=e266] [cursor=pointer]:
+                - /url: https://us2.cloudbeds.com/en/reservation/sqAH3Y?rid=63557503402199&currency=aud
+                - text: Check dates & rates
+          - article [ref=e269]:
+            - generic [ref=e270]:
+              - img "2-bedroom self-contained suite at Centre Break Beach Stay near Jurien Bay" [ref=e271]
+              - generic [ref=e272]: "06"
+            - generic [ref=e273]:
+              - paragraph [ref=e274]: Sleeps 6 · ocean views
+              - heading "2-bedroom self-contained suite" [level=3] [ref=e275]
+              - paragraph [ref=e276]: A spacious family setup with a queen room and a bunk room, full kitchenette, air conditioning, ensuite bathroom, balcony access, and ocean views.
+              - generic [ref=e277]:
+                - generic [ref=e278]: 6 guests
+                - generic [ref=e282]: 1 queen + 4 singles
+              - generic [ref=e287]:
+                - generic [ref=e288]: Kitchen
+                - generic [ref=e291]: A/C
+                - generic [ref=e294]: Wi-Fi
+                - generic [ref=e297]: TV
+                - generic [ref=e300]: Ocean views
+              - link "Check dates and rates for 2-bedroom self-contained suite" [ref=e303] [cursor=pointer]:
+                - /url: https://us2.cloudbeds.com/en/reservation/sqAH3Y?rid=63563852673161&currency=aud
+                - text: Check dates & rates
+    - region [ref=e306]:
+      - generic [ref=e307]:
+        - generic [ref=e308]:
+          - img "Local seafood served at Centre Break Restaurant near Jurien Bay" [ref=e309]
+          - img "Outdoor café patio" [ref=e310]
+          - generic [ref=e311]:
+            - text: Eat
+            - emphasis [ref=e313]: local.
+        - generic [ref=e314]:
+          - paragraph [ref=e315]: Restaurant near Jurien Bay
+          - heading [level=2] [ref=e316]:
+            - text: Centre Break
+            - emphasis [ref=e317]: Restaurant.
+          - paragraph [ref=e318]: Local seafood, easy lunches, hearty dinners, and an ice-cold drink without needing to get back in the car.
+          - paragraph [ref=e319]: Centre Break Restaurant is a public, onsite licensed restaurant and café in Green Head, around 15 minutes from Jurien Bay. Pull up a chair and enjoy the view from our shaded patio.
+          - generic [ref=e320]:
+            - generic [ref=e321]:
+              - generic [ref=e322]: Lunch
+              - strong [ref=e323]: 11am–2pm
+            - generic [ref=e324]:
+              - generic [ref=e325]: Dinner
+              - strong [ref=e326]: 5pm–7pm
+          - generic [ref=e327]:
+            - link "View the menu" [ref=e328] [cursor=pointer]:
+              - /url: /documents/menu.pdf
+            - link "Restaurant details" [ref=e331] [cursor=pointer]:
+              - /url: /jurien-bay-restaurant/
+    - region [ref=e334]:
+      - generic [ref=e335]:
+        - img "Turquoise water and white sand near Jurien Bay and Green Head" [ref=e336]
+        - generic [ref=e337]:
+          - generic [ref=e338]: Things to do near Jurien Bay
+          - strong [ref=e339]:
+            - text: Out here,
+            - emphasis [ref=e340]: the day is yours.
+      - generic [ref=e341]:
+        - generic [ref=e342]:
+          - generic [ref=e343]:
+            - paragraph [ref=e344]: Things to do near Jurien Bay
+            - heading [level=2] [ref=e345]:
+              - text: Go on,
+              - emphasis [ref=e346]: get outside.
+          - generic [ref=e347]:
+            - paragraph [ref=e348]: Visiting Jurien Bay? Green Head is 15 minutes away, with white sandy beaches, sheltered coves, offshore islands, and wildflowers inland.
+            - link "Things to do near Jurien Bay" [ref=e349] [cursor=pointer]:
+              - /url: /activities/
+        - generic [ref=e352]:
+          - article [ref=e353]:
+            - generic [ref=e354]: "01"
+            - generic [ref=e355]:
+              - heading "Sea lions" [level=3] [ref=e356]
+              - paragraph [ref=e357]: Take a tour to see the Australian sea lions thriving around Green Head’s coastal islands.
+              - link "Sea Lion Charters" [ref=e358] [cursor=pointer]:
+                - /url: https://www.sealioncharters.com.au/
+          - article [ref=e361]:
+            - generic [ref=e362]: "02"
+            - generic [ref=e363]:
+              - heading "Wildflowers" [level=3] [ref=e364]
+              - paragraph [ref=e365]: Spring turns the inland country into a colour-filled reason to slow down and explore.
+              - link "Explore wildflower country" [ref=e366] [cursor=pointer]:
+                - /url: http://wildflowercountry.com.au/destinations/green-head-leeman
+          - article [ref=e369]:
+            - generic [ref=e370]: "03"
+            - generic [ref=e371]:
+              - heading "Osprey watching" [level=3] [ref=e372]
+              - paragraph [ref=e373]: Look up along the coastline near Centre Break — Green Head is home to numerous wild ospreys.
+          - article [ref=e374]:
+            - generic [ref=e375]: "04"
+            - generic [ref=e376]:
+              - heading "Three Bays Walkway" [level=3] [ref=e377]
+              - paragraph [ref=e378]: A 2.5 km sealed walkway linking South Bay, Dynamite Bay, and the peaceful Anchorage Bay.
+              - link "See the walkway" [ref=e379] [cursor=pointer]:
+                - /url: https://www.coorow.wa.gov.au/tourism/green-head-three-bays-walkway.aspx
+        - generic "More local activities" [ref=e382]:
+          - generic [ref=e383]: Swimming & snorkelling
+          - generic [ref=e386]: Beach fishing
+          - generic [ref=e389]: Water sports
+          - generic [ref=e392]: Sand boarding
+          - generic [ref=e395]: Walk trails
+          - generic [ref=e398]: Skydive Jurien Bay
+    - region [ref=e401]:
+      - generic [ref=e402]:
+        - generic [ref=e403]:
+          - paragraph [ref=e404]: Find us
+          - heading [level=2] [ref=e405]:
+            - text: A coastal base
+            - emphasis [ref=e406]: near Jurien Bay.
+          - paragraph [ref=e407]: Green Head is a quaint fishing village two hours north of Perth and 15 minutes from Jurien Bay along Indian Ocean Drive.
+          - generic [ref=e408]:
+            - generic [ref=e413]:
+              - strong [ref=e414]: Centre Break Beach Stay
+              - text: 1 Green Head RoadGreen Head WA 6514
+            - generic [ref=e419]:
+              - strong [ref=e420]: Check-in / check-out
+              - text: From 2pm · Until 10am
+          - link "Get directions" [ref=e421] [cursor=pointer]:
+            - /url: https://www.google.com/maps/dir/?api=1&destination=Centre+Break+Beach+Stay,+1+Green+Head+Road,+Green+Head+WA+6514
+        - generic [ref=e424]:
+          - button "Load interactive Google Map" [ref=e425] [cursor=pointer]:
+            - generic [ref=e426]:
+              - generic [ref=e431]: Green Head
+              - generic [ref=e432]: Dynamite Bay
+            - generic [ref=e437]: Load interactive map
+          - generic: 50 metresfrom Dynamite Bay
+    - generic [ref=e441]:
+      - generic [ref=e442]:
+        - paragraph [ref=e443]: Ready when you are
+        - heading [level=2] [ref=e444]:
+          - text: Stay near Jurien Bay.
+          - emphasis [ref=e445]: Make a little space.
+      - link "Check dates & rates" [ref=e446] [cursor=pointer]:
+        - /url: https://us2.cloudbeds.com/en/reservation/sqAH3Y?currency=aud
+  - contentinfo [ref=e449]:
+    - generic [ref=e450]:
+      - generic [ref=e451]:
+        - link "Centre Break Beach Stay home" [ref=e452] [cursor=pointer]:
+          - /url: /
+          - img "Centre Break Beach Stay" [ref=e453]
+        - paragraph [ref=e454]: Accommodation near Jurien Bay in Green Head, 50 metres from Dynamite Bay.
+      - generic [ref=e455]:
+        - paragraph [ref=e456]: Explore
+        - link "Green Head guide" [ref=e457] [cursor=pointer]:
+          - /url: /green-head/
+        - link "Jurien Bay accommodation" [ref=e458] [cursor=pointer]:
+          - /url: /jurien-bay-accommodation/
+        - link "Activities" [ref=e459] [cursor=pointer]:
+          - /url: /activities/
+        - link "Restaurant near Jurien Bay" [ref=e460] [cursor=pointer]:
+          - /url: /jurien-bay-restaurant/
+        - link "Find us" [ref=e461] [cursor=pointer]:
+          - /url: /#location
+      - generic [ref=e462]:
+        - paragraph [ref=e463]: Contact
+        - link "(08) 9953 1896" [ref=e464] [cursor=pointer]:
+          - /url: tel:+61899531896
+        - link "Email us" [ref=e465] [cursor=pointer]:
+          - /url: mailto:info@centrebreakbeachstay.com.au
+        - paragraph [ref=e470]: Follow along
+        - generic [ref=e471]:
+          - link "Instagram" [ref=e472] [cursor=pointer]:
+            - /url: https://www.instagram.com/centrebreakbeachstay/
+          - link "Facebook" [ref=e478] [cursor=pointer]:
+            - /url: https://www.facebook.com/centrebreak
+      - generic [ref=e482]:
+        - paragraph [ref=e483]: Open 7 days
+        - paragraph [ref=e484]: Centre Break Restaurant11am–2pm5pm–7pm
+        - link "Check dates & rates ↗" [ref=e485] [cursor=pointer]:
+          - /url: https://us2.cloudbeds.com/en/reservation/sqAH3Y?currency=aud
+    - generic [ref=e486]:
+      - paragraph [ref=e487]: © Centre Break Beach Stay 2026
+      - generic [ref=e488]:
+        - link "Terms & conditions" [ref=e489] [cursor=pointer]:
+          - /url: /documents/terms-and-conditions.pdf
+        - link "Menu PDF" [ref=e490] [cursor=pointer]:
+          - /url: /documents/menu.pdf
+  - alert [ref=e491]
