@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Gallery } from "../components/gallery";
 import { HeroSlideshow } from "../components/hero-slideshow";
 import { Icon } from "../components/icon";
 import { MapEmbed } from "../components/map-embed";
@@ -38,17 +37,6 @@ export default function HomePage() {
             <img src={assetPath("/images/welcome.webp")} alt="Welcome garden entrance at Centre Break Beach Stay" />
             <div className="image-caption"><Icon name="spark" size={15} /> Make room for a slower pace</div>
           </div>
-        </section>
-
-        <section className="gallery-section shell section-pad-small" aria-label="Property gallery">
-          <div className="section-heading section-heading-row">
-            <div>
-              <p className="eyebrow">The stay</p>
-              <h2>Come as you are.</h2>
-            </div>
-            <p className="section-side-copy">Rooms to suit a quick Jurien Bay coastal escape, an easy family holiday, or a few extra days of doing absolutely nothing.</p>
-          </div>
-          <Gallery />
         </section>
 
         <section className="room-section" id="roomsrates" aria-labelledby="rooms-title">
