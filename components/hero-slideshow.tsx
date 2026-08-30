@@ -132,9 +132,9 @@ export function HeroSlideshow() {
       <div className="hero-overlay" />
 
       <div className="shell hero-content hero-slideshow-content">
-        <p className="eyebrow eyebrow-light"><Icon name="wave" size={16} /> Centre Break Beach Stay · Green Head</p>
-        <h1 id="hero-title">Stay by the bay.<br /><em>Take it slower.</em></h1>
-        <p className="hero-copy">Jurien Bay accommodation 15 minutes from town and 50 metres from Dynamite Bay, with comfortable rooms and an onsite restaurant.</p>
+        <p className="eyebrow eyebrow-light"><Icon name="wave" size={16} /> Accommodation near Jurien Bay</p>
+        <h1 id="hero-title">A coastal base<br /><em>near Jurien Bay.</em></h1>
+        <p className="hero-copy">Centre Break Beach Stay is in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay. Choose from double rooms, family rooms and self-contained suites for up to six guests.</p>
         <div className="hero-actions">
           <a className="button button-light" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="home-hero">Check dates & rates <Icon name="arrow" size={17} /></a>
           <Link className="button button-ghost" href="/jurien-bay-accommodation/">Explore rooms</Link>
