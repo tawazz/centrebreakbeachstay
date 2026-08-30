@@ -144,11 +144,6 @@ export function HeroSlideshow() {
 
       <div className="hero-note" aria-label="Distance to Dynamite Bay"><span>50m</span><small>to Dynamite Bay</small></div>
 
-      <a className="hero-scroll-hint" href="#intro-title">
-        <span>Scroll to explore</span>
-        <Icon name="chevron" size={18} />
-      </a>
-
       <div className="shell hero-slideshow-footer">
         <div className="hero-slide-caption" aria-live={isPaused || isFocused ? "polite" : "off"}>
           <span>{activeSlide.label}</span>
