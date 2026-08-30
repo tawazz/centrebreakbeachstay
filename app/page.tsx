@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Gallery } from "../components/gallery";
+import { HeroSlideshow } from "../components/hero-slideshow";
 import { Icon } from "../components/icon";
 import { MapEmbed } from "../components/map-embed";
 import { RoomCard } from "../components/room-card";
@@ -23,21 +24,7 @@ export default function HomePage() {
       <SiteHeader />
       <StructuredData page="home" />
       <main>
-        <section className="hero" aria-labelledby="hero-title">
-          <img className="hero-image" src={assetPath("/images/activities.webp")} alt="White sand and turquoise water near Jurien Bay and Green Head" fetchPriority="high" />
-          <div className="hero-overlay" />
-          <div className="shell hero-content">
-            <p className="eyebrow eyebrow-light"><Icon name="wave" size={16} /> Jurien Bay area · Green Head</p>
-            <h1 id="hero-title">Jurien Bay accommodation<br /><em>by the sea.</em></h1>
-            <p className="hero-copy">Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay, with comfortable rooms for couples and families.</p>
-            <div className="hero-actions">
-              <a className="button button-light" href={bookingUrl} target="_blank" rel="noopener" data-booking-placement="home-hero">Check dates & rates <Icon name="arrow" size={17} /></a>
-              <Link className="button button-ghost" href="/jurien-bay-accommodation/">Explore rooms</Link>
-            </div>
-            <p className="booking-helper">Live availability opens in our booking partner.</p>
-          </div>
-          <div className="hero-note"><span>50m</span><small>to Dynamite Bay</small></div>
-        </section>
+        <HeroSlideshow />
 
         <section className="intro-section shell section-pad" aria-labelledby="intro-title">
           <div className="intro-copy">

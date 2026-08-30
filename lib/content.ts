@@ -8,6 +8,75 @@ export const bookingUrl = `${bookingBaseUrl}?currency=aud`;
 export const menuUrl = "/documents/menu.pdf";
 export const termsUrl = "/documents/terms-and-conditions.pdf";
 
+export const heroSlides = [
+  {
+    src: "/images/hero-centre-break-02.jpg",
+    alt: "Dynamite Bay with clear turquoise water and white sand near Green Head",
+    label: "Dynamite Bay · 50 metres away",
+    title: "Blue-water mornings.",
+  },
+  {
+    src: "/images/hero-centre-break-01.jpg",
+    alt: "Shaded outdoor dining patio at Centre Break Beach Stay",
+    label: "Onsite restaurant & café",
+    title: "Stay for another plate.",
+  },
+  {
+    src: "/images/hero-centre-break-06.jpg",
+    alt: "Centre Break Beach Stay building with balconies in Green Head",
+    label: "Centre Break Beach Stay",
+    title: "Your coastal base in Green Head.",
+  },
+  {
+    src: "/images/hero-centre-break-07.jpg",
+    alt: "Handmade welcome sign at the entrance to Centre Break Beach Stay",
+    label: "Welcome to Green Head",
+    title: "Arrive curious. Leave lighter.",
+  },
+  {
+    src: "/images/hero-centre-break-04.jpg",
+    alt: "Dynamite Bay direction sign under a clear blue sky",
+    label: "Dynamite Bay",
+    title: "The bay is just down the road.",
+  },
+  {
+    src: "/images/hero-centre-break-03.jpg",
+    alt: "Centre Break Beach Stay sign mounted on the property exterior",
+    label: "A stay with its own rhythm",
+    title: "Make room for a slower pace.",
+  },
+  {
+    src: "/images/hero-front-desk-02.jpg",
+    alt: "Front desk and welcome area at Centre Break Beach Stay",
+    label: "Reception",
+    title: "A warm welcome, from check-in.",
+  },
+  {
+    src: "/images/hero-front-desk-01.jpg",
+    alt: "Guest lounge with coastal cushions and local brochures",
+    label: "Guest lounge",
+    title: "Slow afternoons start here.",
+  },
+  {
+    src: "/images/hero-front-desk-03.jpg",
+    alt: "Breakfast buffet prepared at Centre Break Restaurant",
+    label: "Centre Break Restaurant",
+    title: "Breakfast, lunch, dinner.",
+  },
+  {
+    src: "/images/hero-front-desk-04.jpg",
+    alt: "Restaurant dining room with tables ready for guests",
+    label: "Restaurant dining",
+    title: "Come in from the salt air.",
+  },
+  {
+    src: "/images/hero-front-desk-05.jpg",
+    alt: "Long dining table set at Centre Break Restaurant",
+    label: "Gather around the table",
+    title: "Good food stays local.",
+  },
+] as const;
+
 export const business = {
   name: "Centre Break Beach Stay",
   restaurantName: "Centre Break Restaurant",
