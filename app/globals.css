@@ -64,7 +64,7 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 
 .hero { min-height: 690px; overflow: hidden; position: relative; }
 .hero-image, .page-hero > img { height: 100%; inset: 0; object-fit: cover; position: absolute; width: 100%; }
-.hero-overlay { background: linear-gradient(90deg, rgba(var(--teal-rgb), 0.96) 0%, rgba(var(--teal-rgb), 0.56) 46%, rgba(var(--teal-rgb), 0.32) 100%), linear-gradient(0deg, rgba(var(--teal-rgb), 0.54), transparent 38%); inset: 0; position: absolute; }
+.hero-overlay { background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.42) 46%, rgba(0, 0, 0, 0.14) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.62), transparent 38%); inset: 0; position: absolute; }
 .hero-content { color: var(--white); padding-bottom: 112px; padding-top: 140px; position: relative; z-index: 1; }
 .hero-copy { color: #f1f6ee; font-size: 1.13rem; max-width: 510px; }
 .hero-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 14px; margin-top: 33px; }
@@ -116,7 +116,7 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 .section-side-copy { color: var(--ink-soft); margin: 0 0 10px; max-width: 360px; }
 .gallery-grid { display: grid; gap: 12px; grid-template-columns: 1.25fr 0.7fr 0.7fr; grid-template-rows: 196px 196px; margin-top: 45px; }
 .gallery-tile { background: var(--sand); border: 0; cursor: pointer; min-height: 0; overflow: hidden; padding: 0; position: relative; }
-.gallery-tile::after { background: linear-gradient(0deg, rgba(var(--teal-rgb), 0.38), transparent 45%); content: ""; inset: 0; opacity: 0.66; pointer-events: none; position: absolute; transition: opacity 180ms ease; }
+.gallery-tile::after { background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent 45%); content: ""; inset: 0; opacity: 0.66; pointer-events: none; position: absolute; transition: opacity 180ms ease; }
 .gallery-tile:hover::after { opacity: 1; }
 .gallery-tile img { height: 100%; object-fit: cover; transition: transform 420ms ease; width: 100%; }
 .gallery-tile:hover img { transform: scale(1.045); }
@@ -167,7 +167,7 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 
 .activity-section { background: var(--white); }
 .activity-visual { height: min(57vw, 560px); min-height: 370px; overflow: hidden; position: relative; }
-.activity-visual::after { background: linear-gradient(90deg, rgba(var(--teal-rgb), 0.9), transparent 65%); content: ""; inset: 0; position: absolute; }
+.activity-visual::after { background: linear-gradient(90deg, rgba(0, 0, 0, 0.68), transparent 65%); content: ""; inset: 0; position: absolute; }
 .activity-visual img { height: 100%; object-fit: cover; width: 100%; }
 .activity-visual-copy { color: var(--white); display: flex; flex-direction: column; gap: 20px; left: max(36px, calc((100vw - 1180px) / 2)); position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; }
 .activity-visual-copy span { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -273,7 +273,7 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 .activity-story-grid { display: grid; gap: 12px; grid-template-columns: 1.08fr 0.96fr 0.96fr; grid-template-rows: 306px; }
 .activity-story-feature, .activity-story-card { min-height: 0; overflow: hidden; position: relative; }
 .activity-story-feature { grid-row: auto; }
-.activity-story-feature::after, .activity-story-card::after { background: linear-gradient(0deg, rgba(var(--teal-rgb), 0.94), rgba(var(--teal-rgb), 0.04) 73%); content: ""; inset: 0; pointer-events: none; position: absolute; }
+.activity-story-feature::after, .activity-story-card::after { background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.04) 73%); content: ""; inset: 0; pointer-events: none; position: absolute; }
 .activity-story-feature img, .activity-story-card img { height: 100%; object-fit: cover; transition: transform 500ms ease; width: 100%; }
 .activity-story-feature:hover img, .activity-story-card:hover img { transform: scale(1.04); }
 .activity-story-overlay, .activity-story-card-copy { color: var(--white); position: absolute; z-index: 1; }
@@ -304,7 +304,7 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 .stay-close-section { background: var(--aqua); padding: 116px 0; }
 .stay-close-grid { align-items: center; display: grid; gap: clamp(55px, 9vw, 130px); grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr); }
 .stay-close-visual { min-height: 500px; overflow: hidden; position: relative; }
-.stay-close-visual::after { background: linear-gradient(0deg, rgba(var(--teal-rgb), 0.38), transparent 48%); content: ""; inset: 0; pointer-events: none; position: absolute; }
+.stay-close-visual::after { background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent 48%); content: ""; inset: 0; pointer-events: none; position: absolute; }
 .stay-close-visual img { height: 100%; object-fit: cover; width: 100%; }
 .stay-close-badge { align-items: center; background: var(--white); bottom: 22px; box-shadow: 0 8px 22px rgba(21,61,58,0.14); display: flex; gap: 10px; left: 22px; padding: 14px 17px; position: absolute; z-index: 1; }
 .stay-close-badge > svg { color: var(--coral); flex: 0 0 auto; }
@@ -358,7 +358,7 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
   .mobile-booking-bar { background: rgba(255,254,250,0.96); border-top: 1px solid var(--line); bottom: 0; display: block; left: 0; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); position: fixed; right: 0; z-index: 19; }
   .mobile-booking-bar .button { width: 100%; }
   .hero { min-height: 670px; }
-  .hero-overlay { background: linear-gradient(90deg, rgba(var(--teal-rgb), 0.94), rgba(var(--teal-rgb), 0.48)), linear-gradient(0deg, rgba(var(--teal-rgb), 0.62), transparent 55%); }
+  .hero-overlay { background: linear-gradient(90deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.38)), linear-gradient(0deg, rgba(0, 0, 0, 0.58), transparent 55%); }
   .hero-content { padding-bottom: 122px; padding-top: 112px; }
   .hero-copy { font-size: 1rem; }
   .hero-note { left: 19px; right: auto; }
