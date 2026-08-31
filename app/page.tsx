@@ -26,8 +26,8 @@ export default function HomePage() {
       <main>
         <HeroSlideshow />
 
-        <section className="intro-section shell section-pad" aria-labelledby="intro-title">
-          <div className="intro-copy">
+        <section className="intro-section section-pad" aria-labelledby="intro-title">
+          <div className="shell intro-copy">
             <p className="eyebrow">Stay near Jurien Bay</p>
             <h2 id="intro-title">A simple place to <em>disappear.</em></h2>
             <p className="lead">Centre Break Beach Stay is in Green Head, around {business.distanceToJurienBay} from Jurien Bay and just {business.distanceToDynamiteBay} from Dynamite Bay.</p>
