@@ -131,7 +131,7 @@ export function PlaceSlideshow() {
       </div>
 
       <div className="place-slideshow-counter" aria-live={isPaused || isFocused ? "polite" : "off"}>
-        {formatSlideNumber(activeIndex)} / {formatSlideNumber(placeSlides.length)}
+        {formatSlideNumber(activeIndex)} / {formatSlideNumber(placeSlides.length - 1)}
       </div>
 
       <div className="place-slideshow-controls" aria-label="Photo slideshow controls">

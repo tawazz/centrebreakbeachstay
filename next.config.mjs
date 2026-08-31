@@ -5,6 +5,7 @@ const nextConfig = {
   output: "export",
   basePath,
   trailingSlash: true,
+  allowedDevOrigins: ["127.0.0.1"],
   productionBrowserSourceMaps: true,
   images: {
     unoptimized: true,

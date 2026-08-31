@@ -153,7 +153,7 @@ export function HeroSlideshow() {
         <div className="hero-slideshow-controls" aria-label="Slideshow controls">
           <div className="hero-slide-counter" aria-label={`Slide ${activeIndex + 1} of ${heroSlides.length}`}>
             <span className="hero-slide-counter-current">{formatSlideNumber(activeIndex)}</span>
-            <span className="hero-slide-counter-total">/{formatSlideNumber(heroSlides.length)}</span>
+            <span className="hero-slide-counter-total">/{formatSlideNumber(heroSlides.length - 1)}</span>
           </div>
           <div className="hero-slide-progress" aria-hidden="true">
             <span style={{ width: `${((activeIndex + 1) / heroSlides.length) * 100}%` }} />
