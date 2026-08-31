@@ -77,6 +77,29 @@ export const heroSlides = [
   },
 ] as const;
 
+export const placeSlides = [
+  {
+    src: "/images/property-exterior.webp",
+    alt: "Centre Break Beach Stay exterior with balconies in Green Head",
+    label: "Centre Break Beach Stay",
+  },
+  {
+    src: "/images/property-patio.jpg",
+    alt: "Shaded outdoor patio at Centre Break Beach Stay",
+    label: "Shaded patio",
+  },
+  {
+    src: "/images/front-desk.jpg",
+    alt: "Front desk and welcome area at Centre Break Beach Stay",
+    label: "A warm welcome",
+  },
+  {
+    src: "/images/welcome.webp",
+    alt: "Welcome garden entrance at Centre Break Beach Stay",
+    label: "Garden entrance",
+  },
+] as const;
+
 export const business = {
   name: "Centre Break Beach Stay",
   restaurantName: "Centre Break Restaurant",

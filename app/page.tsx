@@ -2,6 +2,7 @@ import Link from "next/link";
 import { HeroSlideshow } from "../components/hero-slideshow";
 import { Icon } from "../components/icon";
 import { MapEmbed } from "../components/map-embed";
+import { PlaceSlideshow } from "../components/place-slideshow";
 import { RoomCard } from "../components/room-card";
 import { SiteFooter } from "../components/site-footer";
 import { SiteHeader } from "../components/site-header";
@@ -34,7 +35,7 @@ export default function HomePage() {
             <Link className="text-link" href="/jurien-bay-accommodation/">See Jurien Bay accommodation <Icon name="arrow" size={16} /></Link>
           </div>
           <div className="intro-image-wrap">
-            <img src={assetPath("/images/welcome.webp")} alt="Welcome garden entrance at Centre Break Beach Stay" />
+            <PlaceSlideshow />
             <div className="image-caption"><Icon name="spark" size={15} /> Make room for a slower pace</div>
           </div>
         </section>
