@@ -7,14 +7,14 @@ import { StructuredData } from "../../components/structured-data";
 import { accommodationFaqs, assetPath, bookingUrl, business, rooms } from "../../lib/content";
 
 export const metadata: Metadata = {
-  title: "Jurien Bay Accommodation, 15 Minutes Away",
+  title: "Jurien Bay Short Stay",
   description:
     "Looking for Jurien Bay accommodation? Centre Break Beach Stay is in Green Head, 15 minutes away and 50 metres from Dynamite Bay, with rooms for 2–6 guests.",
   alternates: {
     canonical: "/jurien-bay-accommodation/",
   },
   openGraph: {
-    title: "Jurien Bay Accommodation, 15 Minutes Away",
+    title: "Jurien Bay Short Stay",
     description:
       "Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay, with rooms for couples, families and groups up to six.",
     url: "/jurien-bay-accommodation/",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jurien Bay Accommodation, 15 Minutes Away",
+    title: "Jurien Bay Short Stay",
     description:
       "Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay, with rooms for couples, families and groups up to six.",
     images: ["/images/property-exterior.webp"],

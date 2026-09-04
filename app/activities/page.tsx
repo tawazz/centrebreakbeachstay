@@ -6,14 +6,14 @@ import { SiteHeader } from "../../components/site-header";
 import { activities, assetPath, bookingUrl, business, quickActivities } from "../../lib/content";
 
 export const metadata: Metadata = {
-  title: "Things to Do Near Jurien Bay & Green Head",
+  title: "Things to Do Near Jurien Bay",
   description:
     "Plan things to do near Jurien Bay and Green Head, including sea lions, beaches, snorkelling, fishing, the Three Bays Walkway, wildflowers and more.",
   alternates: {
     canonical: "/activities/",
   },
   openGraph: {
-    title: "Things to Do Near Jurien Bay & Green Head",
+    title: "Things to Do Near Jurien Bay",
     description:
       "Plan things to do near Jurien Bay and Green Head, including sea lions, beaches, snorkelling, fishing, the Three Bays Walkway, wildflowers and more.",
     url: "/activities/",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Things to Do Near Jurien Bay & Green Head",
+    title: "Things to Do Near Jurien Bay",
     description:
       "Plan things to do near Jurien Bay and Green Head, including sea lions, beaches, snorkelling, fishing, the Three Bays Walkway, wildflowers and more.",
     images: ["/images/activities.webp"],

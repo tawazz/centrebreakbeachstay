@@ -68,90 +68,90 @@
 <div class="page">
   <header>
     <h1>centrebreakbeachstay.com.au</h1>
-    <p class="dateline">Local page SEO review · 3 September 2026</p>
-    <p class="subtitle">The public site is crawlable and has recorded estimated search visibility, but OpenSEO found missing homepage and activities-page elements, many missing image descriptions, and one internal URL leading to a page-not-found result. The workspace contains a separate five-route static build with the core page elements observed in place. This report covers the public site, the local build, the recorded link and search data, and one action for this week.</p>
+    <p class="dateline">Updated local page SEO review · 4 September 2026</p>
+    <p class="subtitle">The updated public site is crawlable and the earlier critical and warning-level problems are no longer present. The fresh crawl found a hostname mismatch and four long titles; the local source now keeps the apex host and applies shorter titles, while production still needs the hosting redirect pointed from <code>www</code> to the apex. This report covers the fresh crawl, direct live HTML checks, the applied source changes, and the previously logged link and search data.</p>
   </header>
 
   <section>
     <h2>Where the site stands</h2>
-    <p class="lede">The crawl reached a working homepage and activities page on the public domain. OpenSEO recorded estimated organic traffic, visits from unpaid search results, of 321 and 25 organic keywords. The public site also has recorded backlink data, meaning links from other sites, with 121 backlinks from 52 referring domains, unique linking websites, and 104 referring pages.</p>
-    <p class="lede">The main gap is that the public domain still serves the older WordPress site while the workspace contains a separate Next.js build. OpenSEO reports no homepage H1, two missing meta descriptions, 39 of 42 homepage images without alt text, and one broken internal URL. Direct checks also found the public site does not expose the local build's <code>/green-head/</code> and <code>/jurien-bay-accommodation/</code> routes, which both returned 404, meaning page not found.</p>
+    <p class="lede">The fresh OpenSEO crawl reached 12 URLs: five content pages returned <code>200</code> on <code>www.centrebreakbeachstay.com.au</code>, two linked PDFs also returned <code>200</code>, and the five apex-host versions returned <code>308</code> permanent redirects to <code>www</code>. The five content pages are indexable, have page titles and descriptions, and are linked into the updated site.</p>
+    <p class="lede">The old broken phone URL, missing homepage H1, missing descriptions, empty homepage image alt text, and activities-page heading issue no longer appear. Direct checks of the five live pages found one H1 on each page and no missing or empty image alt text. The remaining crawl findings are nine informational issues: five canonical-host mismatches and four titles between 67 and 78 characters.</p>
   </section>
 
   <hr class="heavy">
 
   <section>
     <h2>If you only do one thing</h2>
-    <p class="lede">Ask the hosting or development contact to deploy the local static build, a set of ready-to-serve page files, only after they confirm which existing page addresses and site functions must stay live. Then verify the five routes and their SEO elements on <code>centrebreakbeachstay.com.au</code>.</p>
-    <p>The public crawl covered 46 URLs, while the local build contains five content routes. The hosting or development contact can move the stronger page basics into production while keeping important public pages, booking links, menu links, contact details, and map functions available.</p>
+    <p class="lede">Make <code>https://centrebreakbeachstay.com.au</code> the single preferred hostname everywhere, then submit its sitemap for re-crawling.</p>
+    <p>The site source already generates apex URLs. The server currently sends apex requests to <code>www</code>, so the hosting setting needs to reverse that permanent redirect and send <code>www</code> requests to the apex. This removes five informational canonical findings and gives search engines one clear address for each page.</p>
     <ol>
-      <li>Send this message to the person who manages the website: <i>Please deploy the latest static export in out/ from the Centre Break Beach Stay project to https://centrebreakbeachstay.com.au only after checking which existing public URLs and booking, menu, contact, and map functions must remain. Keep HTTPS and the five new content paths: /, /activities/, /green-head/, /jurien-bay-accommodation/, and /jurien-bay-restaurant/. Preserve or redirect any older important paths. After deployment, check that robots.txt (the crawler instructions) points to sitemap.xml (the page list), each page returns 200, and the live HTML has a title, a meta description, one H1 heading, descriptive alt text, and structured data (machine-readable business details), plus a working phone link.</i></li>
-      <li>Have them compare the old public sitemap with the new five-page sitemap. If an important old address disappears, add a <code>301</code> redirect, a permanent forwarding rule, to the closest new page.</li>
-      <li>After release, open all five content URLs in a private browser window. Confirm that each page loads, the homepage shows the new title and main heading, and the phone link behaves as expected on a mobile device.</li>
+      <li>Set the hosting provider to keep <code>https://centrebreakbeachstay.com.au</code> as the primary domain and permanently redirect every <code>www</code> path to the matching apex path. Keep HTTPS and the existing route paths.</li>
+      <li>Keep the central URL setting at <code>https://centrebreakbeachstay.com.au</code> in <code>lib/content.ts</code>, then deploy the latest build from <code>out/</code>. The shorter titles are already applied in the source. <i>Message to the website manager: Please make https://centrebreakbeachstay.com.au the canonical site address, redirect every www URL to its matching apex URL, deploy the latest build, and confirm that canonical tags, sitemap.xml, robots.txt, social URLs, and structured data all use the apex domain.</i></li>
+      <li>In Google Search Console, submit <code>https://centrebreakbeachstay.com.au/sitemap.xml</code> and inspect the homepage plus the four route pages. Confirm each apex URL returns <code>200</code>, each <code>www</code> version redirects to it, and each canonical points to the apex URL.</li>
     </ol>
   </section>
 
   <section>
     <h2>Small fixes, in order</h2>
     <div class="cols">
-      <div><p class="row-title">Repair the phone link <span class="mono tag">critical</span></p></div>
+      <div><p class="row-title">Use one hostname in every SEO signal <span class="mono tag">info</span></p></div>
       <div>
-        <p>OpenSEO found a broken internal link from <code>/activities/</code> to <code>/activities/+610899531896</code>, which returned <code>404</code>, a page-not-found result. The public footer contains <code>&lt;a href="+610899531896"&gt;(08) 9953 1896&lt;/a&gt;</code>.</p>
-        <p class="fix"><b>Fix:</b> In the WordPress footer, change the phone link to <code>tel:+61899531896</code>. Crawl the site again and confirm the old relative URL no longer appears.</p>
+        <p>OpenSEO found all five <code>www</code> pages canonicalized to the apex host. Direct HTML shows canonical and <code>og:url</code> values beginning <code>https://centrebreakbeachstay.com.au</code>, while the crawl shows those apex URLs returning <code>308</code> to <code>https://www.centrebreakbeachstay.com.au</code>. The sitemap and robots sitemap address also use the apex host.</p>
+        <p class="fix"><b>Fix:</b> Keep the apex host in the central site URL and configure the hosting provider to permanently redirect <code>www</code> to the matching apex URL. The source already generates the desired apex canonicals, sitemap, robots file, social URLs, and structured data.</p>
       </div>
     </div>
     <div class="cols">
-      <div><p class="row-title">Give the homepage a useful search title and summary <span class="mono tag">warning</span></p></div>
+      <div><p class="row-title">Shorten the homepage title <span class="mono tag">info</span></p></div>
       <div>
-        <p>Direct HTML shows <code>&lt;title&gt;Home - Centre Break Beach Stay&lt;/title&gt;</code>. OpenSEO recorded <code>metaDescription: ""</code>. A meta description is the short summary that can appear under a page in search results.</p>
-        <p class="fix"><b>Fix:</b> In the WordPress or Yoast page editor, use the title <code>Jurien Bay Accommodation Near Dynamite Bay | Centre Break Beach Stay</code> and the summary <code>Looking for Jurien Bay accommodation? Stay at Centre Break Beach Stay in Green Head, 15 minutes from Jurien Bay and 50 metres from Dynamite Bay.</code></p>
+        <p>The live title is <code>Jurien Bay Accommodation Near Dynamite Bay | Centre Break Beach Stay</code> at 68 characters. OpenSEO recommends roughly 50–60 characters.</p>
+        <p class="fix"><b>Fix:</b> The local source now uses <code>Jurien Bay Stay Near Dynamite Bay | Centre Break Beach Stay</code>, 59 characters. Deploy the new build so the live homepage receives it.</p>
       </div>
     </div>
     <div class="cols">
-      <div><p class="row-title">Add the homepage main heading <span class="mono tag">warning</span></p></div>
+      <div><p class="row-title">Shorten the activities title <span class="mono tag">info</span></p></div>
       <div>
-        <p>OpenSEO reports <code>missing-h1: 1</code> for the homepage. An H1 is the page's main heading, and the public homepage has no H1 in its HTML.</p>
-        <p class="fix"><b>Fix:</b> Add one visible H1 in the homepage hero, such as <code>Centre Break Beach Stay near Jurien Bay</code>. Keep the section headings below it as H2 headings, the next heading level.</p>
+        <p>The live title is <code>Things to Do Near Jurien Bay &amp; Green Head | Centre Break Beach Stay</code> at 67 characters.</p>
+        <p class="fix"><b>Fix:</b> The local source now uses <code>Things to Do Near Jurien Bay | Centre Break Beach Stay</code>, 54 characters. Keep Green Head in the page heading and description, where it can still support that search.</p>
       </div>
     </div>
     <div class="cols">
-      <div><p class="row-title">Complete the activities page heading and summary <span class="mono tag">warning</span></p></div>
+      <div><p class="row-title">Shorten the Green Head title <span class="mono tag">info</span></p></div>
       <div>
-        <p>Direct HTML shows <code>&lt;title&gt;Activities - Centre Break Beach Stay&lt;/title&gt;</code> with no meta description. The heading count is <code>h1=1, h2=18, h3=0, h4=4</code>, so the page jumps from H2 section headings to H4 subheadings without an H3 level. OpenSEO recorded one heading-order skip.</p>
-        <p class="fix"><b>Fix:</b> Set the title to <code>Things to Do Near Jurien Bay &amp; Green Head | Centre Break Beach Stay</code>, add the summary <code>Plan things to do near Jurien Bay and Green Head, including sea lions, beaches, snorkelling, fishing, the Three Bays Walkway, wildflowers and more.</code>, and change footer or sub-section labels to H3 or plain text so the heading levels descend in order.</p>
+        <p>The live title is <code>Green Head WA: Beaches, Things to Do &amp; Accommodation | Centre Break Beach Stay</code> at 78 characters, the longest title in the crawl.</p>
+        <p class="fix"><b>Fix:</b> The local source now uses <code>Green Head WA Accommodation | Centre Break Beach Stay</code>, 53 characters. Keep the beaches and activities language in the description and body copy.</p>
       </div>
     </div>
     <div class="cols">
-      <div><p class="row-title">Add image descriptions <span class="mono tag">warning</span></p></div>
+      <div><p class="row-title">Shorten the accommodation title <span class="mono tag">info</span></p></div>
       <div>
-        <p>OpenSEO reports <code>imagesMissingAlt: 39</code> and <code>imagesTotal: 42</code> on the homepage. Alt text is a short image description used by screen readers and shown when an image cannot load.</p>
-        <p class="fix"><b>Fix:</b> In the image or page-builder settings, describe meaningful hero, room, restaurant, and location images in a few words. Leave <code>alt=""</code> only on images that add decoration and no information.</p>
+        <p>The live title is <code>Jurien Bay Accommodation, 15 Minutes Away | Centre Break Beach Stay</code> at 67 characters. The restaurant title is 52 characters and does not need this change.</p>
+        <p class="fix"><b>Fix:</b> The local source now uses <code>Jurien Bay Short Stay | Centre Break Beach Stay</code>, 47 characters. Keep “15 minutes from Jurien Bay” in the description and opening copy.</p>
       </div>
     </div>
   </section>
 
   <section>
     <h2>Where to focus first</h2>
-    <p>Focus on short-stay accommodation around Green Head and Jurien Bay. That topic matches the property location and the local build's <code>/green-head/</code> and <code>/jurien-bay-accommodation/</code> pages. The figures below are estimated Australian monthly searches. KD means the keyword-difficulty score returned by OpenSEO; treat it as a starting direction rather than a ranking promise.</p>
+    <p>Focus on accommodation searches around Green Head and Jurien Bay. This matches the property’s location and the two existing money pages. The figures below are estimated Australian monthly searches from the project’s 2 September 2026 keyword research; KD is the recorded keyword-difficulty score, not a ranking promise.</p>
     <div class="cols">
       <div><p class="row-title">green head accommodation <span class="mono tag">210 searches/mo · KD 0</span></p></div>
       <div>
-        <p>A direct location and lodging query that fits the property's address and Green Head page.</p>
-        <p class="fix"><b>Use:</b> Publish <code>/green-head/</code> with the property name, 1 Green Head Road, map, 50 metres to Dynamite Bay, room choices, and a booking link near the top.</p>
+        <p>A direct local lodging query that fits the property’s address and the <code>/green-head/</code> page.</p>
+        <p class="fix"><b>Strengthen:</b> Put the property name, 1 Green Head Road, 50 metres to Dynamite Bay, room choices, map, and booking link near the top.</p>
       </div>
     </div>
     <div class="cols">
       <div><p class="row-title">jurien bay short stay accommodation <span class="mono tag">210 searches/mo · KD 0</span></p></div>
       <div>
-        <p>This specific accommodation query fits guests who want Jurien Bay access without staying in the town centre.</p>
-        <p class="fix"><b>Use:</b> Publish <code>/jurien-bay-accommodation/</code> with the 15-minute drive, 50-metre beach distance, rooms for 2 to 6 guests, and current availability link.</p>
+        <p>This specific query fits guests who want Jurien Bay access without staying in the town centre.</p>
+        <p class="fix"><b>Strengthen:</b> On <code>/jurien-bay-accommodation/</code>, lead with the 15-minute drive, 50-metre beach distance, rooms for 2–6 guests, and the current availability link.</p>
       </div>
     </div>
     <div class="cols">
       <div><p class="row-title">cheap accommodation jurien bay <span class="mono tag">70 searches/mo · KD 0</span></p></div>
       <div>
-        <p>This smaller query fits the Budget Double Room if the property is comfortable using value-focused wording.</p>
-        <p class="fix"><b>Use:</b> Add a clear value section on <code>/jurien-bay-accommodation/</code> for the Budget Double Room, shared bathroom, included amenities, and the type of trip it suits.</p>
+        <p>A smaller value-focused query that may fit the Budget Double Room if the property is comfortable using that positioning.</p>
+        <p class="fix"><b>Strengthen:</b> Add a clear value section to <code>/jurien-bay-accommodation/</code> covering the Budget Double Room, shared bathroom, included amenities, and the type of trip it suits.</p>
       </div>
     </div>
   </section>
@@ -159,16 +159,17 @@
   <section>
     <h2>Already working</h2>
     <ul class="plain">
-      <li>The public <code>robots.txt</code> allows crawling and points to <code>sitemap_index.xml</code>. <span class="why">These are the instructions and page list that help a crawler find the site.</span></li>
-      <li>The public homepage has a canonical URL, the preferred address for the page, set to <code>https://centrebreakbeachstay.com.au/</code>, and sends an index/follow directive. <span class="why">Search engines can use the preferred address and follow its links.</span></li>
-      <li>The local build produces five content routes plus <code>robots.txt</code> and <code>sitemap.xml</code>. Each content route has a unique title, meta description, canonical URL, one H1, and non-empty alt text in the built HTML. <span class="why">These are the core page signals to preserve when the site moves.</span></li>
-      <li>The local build includes structured data, machine-readable business details, for the hotel and restaurant, including name, address, phone, map, and social links. <span class="why">This gives search engines useful local business context.</span></li>
-      <li>The local build passes its production build check. The public domain has recorded data for 121 backlinks, 52 referring domains, 104 referring pages, estimated organic traffic of 321, and 25 organic keywords. <span class="why">The report treats these as recorded data, not a quality or ranking guarantee.</span></li>
+      <li>All five content routes return <code>200</code> on the live <code>www</code> host and are marked indexable. <span class="why">The updated page set is available to crawlers.</span></li>
+      <li>Every live content route has a title, a meta description, one H1, and non-empty image alt text. <span class="why">The main page-level signals that were missing on the old public site are now present.</span></li>
+      <li>The public phone link is <code>tel:+61899531896</code>. <span class="why">Visitors can activate it directly on a mobile device.</span></li>
+      <li><code>robots.txt</code> allows crawling and points to <code>sitemap.xml</code>; the sitemap contains the five intended content routes on the apex host. <span class="why">The files already match the preferred-domain choice.</span></li>
+      <li>The live homepage emits hotel structured data with the property name, address, phone, map, and social profiles. <span class="why">Search engines receive useful local business context.</span></li>
+      <li>The project’s recorded off-page baseline is 121 backlinks from 52 referring domains and 104 referring pages, with estimated organic traffic of 321 and 25 organic keywords. <span class="why">These are recorded estimates, not a quality or ranking guarantee.</span></li>
     </ul>
   </section>
 
   <footer>
-    <p>Reviewed 3 September 2026. OpenSEO reported the completed 46-page crawl, issue counts, backlink data, domain overview, and Australian keyword estimates. I directly verified the public homepage and activities HTML, the listed public route statuses, the public robots and sitemap responses, and the phone-link markup. I observed the local five-route build after a passing production build and inspected its generated HTML, robots.txt, and sitemap.xml. Lighthouse performance testing was not run. The public site and local build are separate, so local observations are not live-domain results.</p>
+    <p>Reviewed 4 September 2026. Fresh crawl and issue/page data came from OpenSEO audit <code>19c42314-d996-45f1-9422-8ddbd1636adb</code>, with Lighthouse disabled. I fetched and reviewed the live HTML for the homepage, activities, Green Head, accommodation, and restaurant routes, including titles, descriptions, canonicals, headings, images, phone link, structured data, robots.txt, and sitemap.xml. I then applied the four title changes in the local source and verified the generated <code>out/</code> HTML, sitemap, robots file, and apex-only SEO URLs after a passing production build. Backlink, domain, and Australian keyword figures were reused from the project research log dated 2 September 2026. The live crawl predates redeployment of these source changes.</p>
   </footer>
 </div>
 </body>

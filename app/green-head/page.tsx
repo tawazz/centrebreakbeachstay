@@ -18,14 +18,14 @@ import {
 } from "../../lib/content";
 
 export const metadata: Metadata = {
-  title: "Green Head WA: Beaches, Things to Do & Accommodation",
+  title: "Green Head WA Accommodation",
   description:
     "Discover Green Head WA: Dynamite Bay, the Three Bays Walkway, sea lion tours, fishing, wildflowers and accommodation 50m from the coast.",
   alternates: {
     canonical: "/green-head/",
   },
   openGraph: {
-    title: "Green Head WA: Beaches, Things to Do & Accommodation",
+    title: "Green Head WA Accommodation",
     description:
       "Discover Green Head WA: Dynamite Bay, the Three Bays Walkway, sea lion tours, fishing, wildflowers and accommodation 50m from the coast.",
     url: "/green-head/",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Green Head WA: Beaches, Things to Do & Accommodation",
+    title: "Green Head WA Accommodation",
     description:
       "Discover Green Head WA: Dynamite Bay, the Three Bays Walkway, sea lion tours, fishing, wildflowers and accommodation 50m from the coast.",
     images: ["/images/activities.webp"],
