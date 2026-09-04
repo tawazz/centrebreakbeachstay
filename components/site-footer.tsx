@@ -50,7 +50,7 @@ export function SiteFooter() {
       </div>
 
       <div className="shell footer-bottom">
-        <p>© Centre Break Beach Stay 2026</p>
+        <p>© Centre Break Beach Stay 2026 · Developed by <a href="https://www.softdeck.com.au/" target="_blank" rel="noopener noreferrer">Softdeck</a></p>
         <div>
           <a href={assetPath(termsUrl)} target="_blank" rel="noreferrer">Terms & conditions</a>
           <a href={assetPath(menuUrl)} target="_blank" rel="noreferrer">Menu PDF</a>
