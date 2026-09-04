@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AttributionTracker } from "../components/attribution-tracker";
+import { GoogleAnalytics } from "../components/google-analytics";
 import { assetPath, siteUrl } from "../lib/content";
 
 export const metadata: Metadata = {
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         {children}
         <AttributionTracker />
+        <GoogleAnalytics measurementId="G-RDV0MX76JC" />
       </body>
     </html>
   );
