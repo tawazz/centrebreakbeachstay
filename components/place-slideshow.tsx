@@ -134,6 +134,10 @@ export function PlaceSlideshow() {
         {formatSlideNumber(activeIndex)} / {formatSlideNumber(placeSlides.length - 1)}
       </div>
 
+      <div className="place-slideshow-caption" aria-live={isPaused || isFocused ? "polite" : "off"}>
+        <span>{activeSlide.label}</span>
+      </div>
+
       <div className="place-slideshow-controls" aria-label="Photo slideshow controls">
         <button className="place-slideshow-control place-slideshow-control-prev" type="button" onClick={goToPreviousSlide} aria-label="Show previous place photo">
           <Icon name="arrow" size={18} />

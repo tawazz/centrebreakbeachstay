@@ -107,14 +107,16 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
 .intro-copy { max-width: 650px; }
 .intro-copy > p:not(.eyebrow) { max-width: 510px; }
 .intro-image-wrap { position: relative; width: 100%; }
-.intro-image-wrap img { aspect-ratio: 0.78; object-fit: cover; width: 100%; }
-.place-slideshow { aspect-ratio: 2.1 / 1; background: var(--sand); min-height: 420px; overflow: hidden; position: relative; width: 100%; }
+.intro-image-wrap > img { aspect-ratio: 0.78; object-fit: cover; width: 100%; }
+.place-slideshow { aspect-ratio: 2.1 / 1; background: var(--sand); margin: 0 auto; max-height: 500px; min-height: 0; overflow: hidden; position: relative; width: min(1180px, calc(100% - 72px)); }
 .place-slideshow:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .place-slideshow-stage { inset: 0; position: absolute; }
 .place-slide { inset: 0; opacity: 0; position: absolute; transition: opacity 700ms ease; }
 .place-slide.is-active { opacity: 1; z-index: 1; }
 .place-slide-image { height: 100%; object-fit: cover; width: 100%; }
 .place-slideshow-counter { background: rgba(0,0,0,0.42); color: var(--white); font-size: 0.68rem; font-weight: 800; left: 18px; letter-spacing: 0.12em; padding: 7px 10px; position: absolute; top: 18px; z-index: 2; }
+.place-slideshow-caption { background: rgba(0,0,0,0.48); bottom: 18px; color: var(--white); left: 18px; max-width: min(48%, 340px); padding: 11px 14px; position: absolute; z-index: 2; }
+.place-slideshow-caption span { display: block; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; line-height: 1.2; text-transform: uppercase; }
 .place-slideshow-controls { bottom: 18px; display: flex; gap: 8px; position: absolute; right: 18px; z-index: 2; }
 .place-slideshow-control { align-items: center; background: rgba(0,0,0,0.42); border: 1px solid rgba(255,254,250,0.72); color: var(--white); cursor: pointer; display: flex; height: 48px; justify-content: center; padding: 0; transition: background 180ms ease, border 180ms ease, color 180ms ease, transform 180ms ease; width: 48px; }
 .place-slideshow-control:hover { background: var(--gold); border-color: var(--gold); color: var(--ink); transform: translateY(-2px); }
@@ -380,8 +382,9 @@ em { color: var(--coral); font-family: Georgia, "Times New Roman", serif; font-w
   .activity-hero-note { left: 19px; right: auto; }
   .intro-section, .food-layout, .location-layout { display: flex; flex-direction: column; }
   .intro-image-wrap { width: 100%; }
-  .place-slideshow { aspect-ratio: 1.15 / 1; min-height: 360px; }
+  .place-slideshow { aspect-ratio: 1.15 / 1; max-height: 340px; min-height: 0; width: min(550px, calc(100% - 38px)); }
   .place-slideshow-counter { left: 15px; top: 15px; }
+  .place-slideshow-caption { bottom: 15px; left: 15px; max-width: min(52%, 220px); }
   .place-slideshow-controls { bottom: 15px; right: 15px; }
   .image-caption { left: 19px; }
   .section-heading-row { align-items: flex-start; flex-direction: column; gap: 7px; }
