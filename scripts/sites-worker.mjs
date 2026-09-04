@@ -16,11 +16,16 @@ export default {
       return new Response("Method not allowed", { status: 405 });
     }
 
+    const requestUrl = new URL(request.url);
+
+    if (requestUrl.pathname === "/sitemap_index.xml") {
+      requestUrl.pathname = "/sitemap.xml";
+      return Response.redirect(requestUrl, 308);
+    }
+
     if (!env?.ASSETS?.fetch) {
       return new Response("Static asset binding unavailable", { status: 500 });
     }
-
-    const requestUrl = new URL(request.url);
 
     for (const pathname of assetCandidates(requestUrl.pathname)) {
       const assetUrl = new URL(requestUrl);
